@@ -1,0 +1,143 @@
+{
+    "title": "CYBR-2500-Midtem",
+    "questions": [
+        {
+            "question": "A network that connects LANs in different countries is most likely a WAN.",
+            "options": ["True", "False"],
+            "answer": 0
+        },
+        {
+            "question": "Which unit of data stores a single value that can be a 0 or a 1?",
+            "options": ["word", "nibble", "bit", "bps", "byte"],
+            "answer": 2
+        },
+        {
+            "question": "What is one of the disadvantages of a peer-to-peer network compared to a server-based network?",
+            "options": ["more expensive", "higher administration costs", "limited security", "more difficult to setup and install"],
+            "answer": 2
+        },
+        {
+            "question": "Which component, located on the motherboard, carries out all the instructions provided by computer programs?",
+            "options": ["hard drive", "NIC", "RAM", "CPU"],
+            "answer": 3
+        },
+        {
+            "question": "Which component manages the details of communicating with the NIC hardware to send and receive data to and from network media?",
+            "options": ["client", "network protocol", "device driver", "server software"],
+            "answer": 2
+        },
+        {
+            "question": "You have just started a new business. You need to have three to four workstations available for your employees who simply need to share some files and a printer, but you don't have a large budget. Security is not a major concern, but costs are. Which network model would be the most appropriate for your situation?",
+            "options": ["domain", "peer-to-peer network", "internetwork", "server-based network"],
+            "answer": 1
+        },
+        {
+            "question": "You want a fast CPU for the new computer you are building and your motherboard only has one CPU socket. To increase the processing power, you need a CPU that provides more than one processor. What type of CPU are you looking for?",
+            "options": ["multiprocessing", "multitasking", "multilink", "multicore"],
+            "answer": 3
+        },
+        {
+            "question": "When data is being prepared for transmission onto the network, it is broken into small pieces and a header and trailer are added to each piece to help identify it. What is this process called?",
+            "options": ["encapsulation","application", "multitasking", "verification"],
+            "answer": 0
+        },
+        {
+            "question": "Which of the following are examples of input devices? (Choose all that apply.)",
+            "options": ["printer","keyboard","scanner","monitor","mouse"],
+            "correct_options": [1, 2, 4],
+            "multi_select": true
+        },
+        {
+            "question": "Air waves are an example of what type of network component?",
+            "options": ["network protocol", "network interface card", "network medium", "interconnecting device"],
+            "answer": 2
+        },
+        {
+            "question": "You are building a gaming computer and you want to install a dedicated graphics card that has a fast GPU and 4GB of memory on board. You need to make sure that you have the right connector available on your motherboard. What type of connector would be appropriate?",
+            "options": ["SATA", "PCI Express", "PCI", "IDE"],
+            "answer": 1
+        },
+        {
+            "question": "Using the physical mail analogy, what part of an address on an envelope is most like the IP address?",
+            "options": ["street address", "zip code", "MAC address", "recipient name"],
+            "answer": 1
+        },
+        {
+            "question": "Each component of a computer is designed to perform only one specific task—either input, processing, or output.",
+            "options": ["True", "False"],
+            "answer": 1
+        },
+        {
+            "question": "Which part of the network communication process is responsible for sending and receiving data to and from the network media?",
+            "options": ["user application", "network software", "network interface", "network protocol"],
+            "answer": 2
+        },
+        {
+            "question": "What is one of the disadvantages of a server-based network compared to a peer-to-peer network?",
+            "options": ["difficult to expand", "additional costs", "decentralized data access", "less secure"],
+            "answer": 1
+        },
+        {
+            "question": "You're the network administrator for a company located in Arizona that has just opened an office in Texas. You need to make sure that the two locations can communicate. What type of network are you implementing?",
+            "options": ["WAN", "MAN", "extended LAN", "internetwork"],
+            "answer": 0
+        },
+        {
+            "question": "In order to find out your MAC address, you should open a command prompt and type ipconfig /all.",
+            "options": ["True", "False"],
+            "answer": 0
+        },
+        {
+            "question": "Which of the following are examples of output devices? (Choose all that apply.)",
+            "options": ["keyboard", "printer", "CPU", "monitor", "speakers"],
+            "correct_options": [1, 3, 4],
+            "multi_select": true
+        },
+        {
+            "question": "What makes a computer a 'server' is the fact that it has a server operating system installed on it.",
+            "options": ["True", "False"],
+            "answer": 0
+        },
+        {
+            "question": "Every NIC has a unique address that consists of a 12-digit hexadecimal value. What is this address called?",
+            "options": ["default gateway", "MAC address", "subnet mask", "IP address"],
+            "answer": 1
+        },
+        {
+            "question": "What command would you issue from a command prompt to see a listing of the computers in your workgroup?",
+            "options": ["ping", "net view", "ipconfig /all", "arp -a"],
+            "answer": 1
+        },
+        {
+            "question": "Windows 10 is an example of which of the following?",
+            "options": ["network protocol", "server operating system", "server software", "client operating system"],
+            "answer": 3
+        },
+        {
+            "question": "The XYZ company has two offices, one in Chicago, and a brand new office in Pittsburgh. To connect the two offices, they will need a dedicated line, probably leased from the phone company. What type of network will they be implementing to connect their two offices?",
+            "options": ["WAN", "LAN", "SAN", "PAN"],
+            "answer": 0
+        },
+        {
+            "question": "What command would you issue from a command prompt to see a listing of the computers in your workgroup?",
+            "options": ["ping", "net view", "ipconfig /all", "arp -a"],
+            "answer": 1
+        },
+        {
+            "question": "Which part of the network communication process is responsible for sending and receiving data to and from the network media?",
+            "options": ["user application", "network software", "network interface", "network protocol"],
+            "answer": 2
+        },
+        {
+            "question": "You are the network administrator for a company and you want to separate the traffic from the accounting department from the rest of the network. However, the accounting department still needs to have access to other network resources. What type of network do you need to implement?",
+            "options": ["WAN", "internetwork", "wireless network", "WPAN"],
+            "answer": 1
+        },
+        {
+            "question": "An extranet is a private network, such as a school or company network, in which the devices and servers are available only to users connected to the internal network.",
+            "options": ["True", "False"],
+            "answer": 1
+        }
+
+    ]
+}
