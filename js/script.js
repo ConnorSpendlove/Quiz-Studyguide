@@ -3,7 +3,16 @@ let quizData; // To store the loaded quiz data
 // Load quiz data from a JSON file based on the URL parameter
 function loadQuizData() {
     const urlParams = new URLSearchParams(window.location.search);
-    const quizUrl = `/Quiz-Studyguide${urlParams.get('quizUrl')}`;
+    let quizUrl = urlParams.get('quizUrl');
+
+    // Check if running locally or on GitHub Pages
+    if (window.location.hostname === '127.0.0.1' || window.location.hostname === 'localhost') {
+        // Local environment
+        quizUrl = quizUrl;  // Leave the quiz URL as it is for local development
+    } else {
+        // GitHub Pages environment
+        quizUrl = quizUrl.replace('..', '/Quiz-Studyguide');  // Adjust the path for GitHub Pages
+    }
 
     fetch(quizUrl)
         .then(response => {
@@ -21,6 +30,8 @@ function loadQuizData() {
             console.error('Error loading quiz:', error);
         });
 }
+
+
 
 // Render the quiz
 function renderQuiz() {
