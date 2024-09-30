@@ -119,11 +119,6 @@
             "answer": 0
         },
         {
-            "question": "What command would you issue from a command prompt to see a listing of the computers in your workgroup?",
-            "options": ["ping", "net view", "ipconfig /all", "arp -a"],
-            "answer": 1
-        },
-        {
             "question": "Which part of the network communication process is responsible for sending and receiving data to and from the network media?",
             "options": ["user application", "network software", "network interface", "network protocol"],
             "answer": 2
@@ -137,7 +132,452 @@
             "question": "An extranet is a private network, such as a school or company network, in which the devices and servers are available only to users connected to the internal network.",
             "options": ["True", "False"],
             "answer": 1
-        }
+        }, 
+        {
+            "question": "What command would you issue from the command prompt to test whether your computer has connectivity to the network?",
+            "options": ["ipconfig /all", "ipconfig IPaddress", "ping IPaddress", "arp -d IPaddress"],
+            "answer": 2
+        },
+        {
+            "question": "What does a switch do if it doesn't find the destination MAC address in its switching table?",
+            "options": ["discards the frame", "sends an ARP to learn the MAC address", "forwards the frame out all ports", "sends an error to the sending device"],
+            "answer": 2
+        },
+        {
+            "question": "Just as a switch keeps records of MAC addresses that it has learned, so does your computer. What protocol does your computer use to learn MAC addresses?",
+            "options": ["ICMP", "IP", "DHCP", "ARP"],
+            "answer": 3
+        },
+        {
+            "question": "Which of the following is true about hubs?",
+            "options": ["They can handle several computer conversations simultaneously.", "Devices on a hub have to share the available bandwidth.", "They can operate in full-duplex and half-duplex mode.", "They maintain a table of MAC addresses."],
+            "answer": 1
+        },
+        {
+            "question": "Which of the following are features of a router? (Choose all that apply)",
+            "options": ["works with MAC addresses", "connects LANs to one another", "connects computers to the LAN", "works with packets", "forwards broadcast packets"],
+            "correct_options": [1, 3],
+            "multi_select": true
+        },
+        {
+            "question": "What type of frame is addressed to a specific computer?",
+            "options": ["unicast", "broadcast", "anycast", "multicast"],
+            "answer": 0
+        },
+        {
+            "question": "What is the purpose of the default route?",
+            "options": ["It's a route set by Microsoft so that all information comes to their servers first.", "It's a route that all routers use to get to the Internet.", "It's where the router sends all packets with destination addresses of which it has no knowledge.", "It serves as a guideline for how to configure routes."],
+            "answer": 2
+        },
+        {
+            "question": "When a NIC is in promiscuous mode, it will process only the frames in which the destination MAC address matches its own MAC address.",
+            "options": ["True", "False"],
+            "answer": 1
+        },
+        {
+            "question": "What component of the computer contains a MAC address?",
+            "options": ["BIOS", "NIC", "motherboard", "CPU"],
+            "answer": 1
+        },
+        {
+            "question": "If a router receives a packet and it does not have an entry in its routing table for the destination network, it will send the packet to its default route, if configured.",
+            "options": ["True", "False"],
+            "answer": 0
+        },
+        {
+            "question": "What does a switch store in its switching table?",
+            "options": ["The frame's destination MAC address and the port it was received on.", "The frame's source IP address and the port it was received on.", "The frame's destination IP address and the port it was received on.", "The frame's source MAC address and the port it was received on."],
+            "answer": 3
+        },
+        {
+            "question": "Which of the following is NOT a function of a hub?",
+            "options": ["receives the signal from a connected computer on one of its ports", "cleans up the signal", "regenerates the signal", "transmits the frame out the correct port"],
+            "answer": 3
+        },
+        {
+            "question": "In some wireless network configurations, a computer must send a special message to the AP before it can transmit data. What is this message called?",
+            "options": ["DNS","ARP","RTS","CTS"],
+            "answer": 2
+        },
+        {
+            "question": "If a router receives a packet and it does not have an entry in its routing table for the destination network, it will send the packet to its default route, if configured.",
+            "options": ["True", "False"],
+            "answer": 0
+        },
+        {
+            "question": "Which of the following is true about a NIC?",
+            "options": ["For outgoing messages, it converts frame data into bit signals.", "For incoming messages, it creates frames from packets.", "For incoming messages, it adds a source and destination MAC address.", "For outgoing messages, it assembles bit signals into frames."],
+            "answer": 0
+        },
+        {
+            "question": "Routers do not forward broadcast packets.",
+            "options": ["True", "False"],
+            "answer": 0
+        },
+        {
+            "question": "How does a switch 'learn' MAC addresses?",
+            "options": ["The switch uses a mathematical formula to determine what the MAC address would be for each computer connected to it.","The switch comes loaded with the most frequently used addresses.","It reads the source address and keeps a record of which port the sending computer is on.","All the MAC addresses must be entered manually."],
+            "answer": 2
+        },
+        {
+            "question": "What does it mean if the full-duplex indicator on a switch port is on?",
+            "options": ["The port can transmit and receive frames simultaneously.","Bandwidth sharing is enabled.","The switch is detecting collisions.","The MAC address table is full."],
+            "answer": 0
+        },
+        {
+            "question": "Which of the following are true about routers? (Choose all that apply.)",
+            "options": ["break up a network into functional groups","allow computers on different networks to communicate","forward broadcasts out all connected ports","make larger broadcast domains","work with IP addresses"],
+            "correct_options": [0, 1, 4],
+            "multi_select": true
+        },
+        {
+            "question": "When referring to network bandwidth, what is the basic unit of measurement?",
+            "options": ["bytes per second","bytes per minute","bits per second","bandwidth per second"],
+            "answer": 2
+        },
+        {
+            "question": "What command issued from the command prompt will show the route that a packet travels from the issuing computer to another computer?",
+            "options": ["ipconfig","route","tracert","arp"],
+            "answer": 2
+        },
+        {
+            "question": "A computer's default gateway setting is the MAC address of a router on a remote network.",
+            "options": ["True","False"],
+            "answer": 1 
+        },
+        {
+            "question": "Which device receives a frame and reads the source and destination MAC addresses before forwarding the frame out another port?",
+            "options": ["hub", "router", "repeater", "switch"],
+            "answer": 3
+        },
+        {
+            "question": "A wireless access point is most like which other network device, in that all computers send signals through it to communicate with other computers?",
+            "options": ["hub", "modem", "switch", "router"],
+            "answer": 0
+        },
+        {
+            "question": "The name assigned to a wireless network is called the SSID.",
+            "options": ["True", "False"],
+            "answer": 0
+        },
+        {
+            "question": "A MAC address is composed of two 24-bit numbers. What does the first 24-bit number represent?",
+            "options": ["The address it uses for a multicast packet.","The decryption key used for security purposes.","A unique serial number assigned by the manufacturer.","The organizationally unique identifier."],
+            "answer": 3
+        },
 
-    ]
-}
+
+        {
+        "question": "What is in an Ethernet frame's trailer?",
+        "options": ["cyclic redundancy check","source MAC address","frame payload","destination MAC address"],
+        "answer": 0
+    },
+    {
+        "question": "Which Ethernet standard specifies speeds of 40 and 100 Gbps and can run up to 7 meters over copper?",
+        "options": ["802.3u","802.3ba","802.3ae","802.3z"],
+        "answer": 1
+    },
+    {
+        "question": "What is the media access method used by Ethernet?",
+        "options": ["Token passing","CSMA/CD","Polling","CSMA/CA"],
+        "answer": 1
+    },
+    {
+        "question": "In a token ring network, what is the central device called?",
+        "options": ["multiport Ethernet switch","multistation access unit","multiservice switch","multisession drive"],
+        "answer": 1
+    },
+    {
+        "question": "Which of the following is NOT a field in an Ethernet frame header?",
+        "options": ["Time-to-Live","Source MAC","FCS","Type"],
+        "answer": 0
+    },
+    {
+        "question": "In which topology does a central device communicate with two or more other devices and is used in WANs where a main office has connections to several branch offices via a router?",
+        "options": ["switched","logical star","logical bus","Point-to-multipoint"],
+        "answer": 3
+    },
+    {
+        "question": "With which kind of Wi-Fi antennas does the signal radiate out with equal strength in all directions?",
+        "options": ["Unidirectional","Omnidirectional","Semidirectional","Multidirectional"],
+        "answer": 1
+    },
+    {
+        "question": "What happens to Wi-Fi signals when they pass through solid objects like walls?",
+        "options": ["Reflections occur causing attenuation.","Scattering and multipath occurs.","Diffraction occurs and the signals are amplified.","Absorption occurs and the signals attenuate."],
+        "answer": 3
+    },
+    {
+        "question": "When a wireless computer uses a peer-to-peer connection to directly connect to another wireless computer, it is operating in what mode?",
+        "options": ["ad hoc","hot spot","infrastructure","Wi-Fi"],
+        "answer": 0
+    },
+    {
+        "question": "What type of logical topology is at work when using an Ethernet hub?",
+        "options": ["logical ring","hierarchical topology","logical bus","switched topology"],
+        "answer": 2
+    },
+    {
+        "question": "A collision can occur on a switch only if the switch is operating in full-duplex mode.",
+        "options": ["True","False"],
+        "answer": 1
+    },
+    {
+        "question": "In a physical bus topology, both ends of the medium must be terminated in order to prevent what?",
+        "options": ["signal propagation","collision","signal bounce","signal degradation"],
+        "answer": 2
+    },
+    {
+        "question": "Which of the following is true about collisions?",
+        "options": ["Fewer computers means more collisions.","They are a problem with Token Ring networks.","They can occur on Ethernet half-duplex networks.","They can only happen with switches."],
+        "answer": 2
+    },
+    {
+        "question": "Which of the following is the physical topology that is daisy-chained like a bus where the cabling is brought around from the last device to the first device?",
+        "options": ["physical ring","physical bus","physical star","point-to-point"],
+        "answer": 0
+    },
+    {
+        "question": "Which of the following is NOT a characteristic of Unshielded Twisted Pair cabling?",
+        "options": ["maximum speed is 100 Mbps","susceptible to electrical interference","comes in numbered categories","contains four pairs of copper wire"],
+        "answer": 0
+    },
+    {
+        "question": "In wireless networks, what type of media access control is used?",
+        "options": ["Polling","CSMA/CD","CSMA/CA","Token passing"],
+        "answer": 1
+    },
+    {
+        "question": "Which of the following is NOT an advantage of a physical star?",
+        "options": ["use of faster technologies","easier network upgrades","centralized monitoring and management of traffic","single point of failure"],
+        "answer": 3
+      },
+      {
+        "question": "What is an advantage of a point-to-point topology?",
+        "options": ["data travels on a dedicated link","allows many end-device connections","a reliable and fast backbone","provides redundancy and fault tolerance"],
+        "answer": 0
+      },
+      {
+        "question": "When discussing Ethernet standards, what does the XBaseY terminology refer to?",
+        "options": ["the transmission speed, the length or type of cabling, and the type of transmissions","the transmission speed, the type of transmissions, and the length or type of cabling","the length or type of cabling, the type of transmissions, and the transmission speed","the length or type of cabling, the transmission speed, and the type of transmissions"],
+        "answer": 1
+      },
+      {
+        "question": "Which of the following is NOT true about 2.5/5GBaseT Ethernet?",
+        "options": ["It has a maximum distance of 100 meters.","It requires at least Cat 6A cabling.","It can be used as an uplink for 802.11ac networks.","It is defined by 802.3bz."],
+        "answer": 2
+      },
+      {
+        "question": "A point-to-point topology is typically used for WAN connections or wireless bridges.",
+        "options": ["True","False"],
+        "answer": 0
+      },
+      {
+        "question": "A network's physical topology refers to the arrangement of the cabling and how the devices connect to each other.",
+        "options": ["True","False"],
+        "answer": 0
+      },
+      {
+        "question": "The physical bus topology is no longer used because it required extra cable and a central device to connect all the computers.",
+        "options": ["True","False"],
+        "answer": 1
+      },
+      {
+        "question": "What is the most common topology and technology combination in use today?",
+        "options": ["logical bus / Ethernet","logical bus / wireless LAN","logical ring / token ring","switched / Ethernet"],
+        "answer": 3
+      },
+      {
+        "question": "A network's logical topology often depends on the central device's electronics.",
+        "options": ["True","False"],
+        "answer": 0
+      },
+          {
+            "question": "Which Ethernet standard specifies speeds of 40 and 100 Gbps and can run up to 7 meters over copper?",
+            "options": [
+              "802.3ba",
+              "802.3u",
+              "802.3ae",
+              "802.3z"
+            ],
+            "answer": 0
+          },
+          {
+            "question": "A collision can occur on a switch only if the switch is operating in full-duplex mode.",
+            "options": [
+              "True",
+              "False"
+            ],
+            "answer": 1
+          },
+          {
+            "question": "In a physical bus topology, both ends of the medium must be terminated in order to prevent what?",
+            "options": [
+              "signal propagation",
+              "collision",
+              "signal bounce",
+              "signal degradation"
+            ],
+            "answer": 2
+          },
+          {
+            "question": "Which of the following is true about collisions?",
+            "options": [
+              "Fewer computers means more collisions.",
+              "They are a problem with Token Ring networks.",
+              "They can occur on Ethernet half-duplex networks.",
+              "They can only happen with switches."
+            ],
+            "answer": 2
+          },
+          {
+            "question": "Which of the following is the physical topology that is daisy-chained like a bus where the cabling is brought around from the last device to the first device?",
+            "options": [
+              "physical ring",
+              "physical bus",
+              "physical star",
+              "point-to-point"
+            ],
+            "answer": 0
+          },
+          {
+            "question": "Which of the following is NOT a characteristic of Unshielded Twisted Pair cabling?",
+            "options": [
+              "maximum speed is 100 Mbps",
+              "susceptible to electrical interference",
+              "comes in numbered categories",
+              "contains four pairs of copper wire"
+            ],
+            "answer": 0
+          },
+          {
+            "question": "In wireless networks, what type of media access control is used?",
+            "options": [
+              "Polling",
+              "CSMA/CD",
+              "CSMA/CA",
+              "Token passing"
+            ],
+            "answer": 2
+          },
+          {
+            "question": "In which topology does a central device communicate with two or more other devices and is used in WANs where a main office has connections to several branch offices via a router?",
+            "options": [
+              "Point-to-multipoint",
+              "logical bus",
+              "logical star",
+              "switched"
+            ],
+            "answer": 0
+          },
+          {
+            "question": "What happens to Wi-Fi signals when they pass through solid objects like walls?",
+            "options": [
+              "Diffraction occurs and the signals are amplified.",
+              "Absorption occurs and the signals attenuate.",
+              "Scattering and multipath occurs.",
+              "Reflections occur causing attenuation."
+            ],
+            "answer": 1
+          },
+          {
+            "question": "In a token ring network, what is the central device called?",
+            "options": [
+              "multistation access unit",
+              "multiservice switch",
+              "multiport Ethernet switch",
+              "multisession drive"
+            ],
+            "answer": 0
+          },
+          {
+            "question": "What is a disadvantage of using fiber-optic cabling versus twisted-pair cabling?",
+            "options": [
+              "more expensive terminations",
+              "high susceptibility to eavesdropping",
+              "limited to shorter distances due to high attenuation",
+              "low bandwidth potential"
+            ],
+            "answer": 0
+          },
+          {
+            "question": "What type of wiring should be used for a high-speed connection between two buildings?",
+            "options": [
+              "UTP cabling",
+              "fiber-optic cabling",
+              "coaxial cabling",
+              "STP cabling"
+            ],
+            "answer": 1
+          },
+          {
+            "question": "Wireless and wired networks are both susceptible to RFI.",
+            "options": [
+              "True",
+              "False"
+            ],
+            "answer": 0
+          },
+          {
+            "question": "Which of the following are components of wireless networks? (Choose all that apply.)",
+            "options": [
+              "SMA connectors",
+              "AP",
+              "emitter",
+              "antenna",
+              "patch panel"
+            ],
+            "answer": [1, 2, 3, 4]
+          },
+          {
+            "question": "You hand a technician a crossover cable to make a connection between devices. Which device pair are you most likely asking him to connect?",
+            "options": [
+              "hub to computer",
+              "switch to switch",
+              "router to switch",
+              "switch to computer"
+            ],
+            "answer": 1
+          },
+          {
+            "question": "A signal has just been received from the WAN link on your network. Using the given components, which of the following shows the path that the signal would take from the WAN to a workstation on your network? Assume all components are used at least once and that some components may be used more than once. 1-backbone cabling 2-entrance facility 3-MDF 4-horizontal wiring 5-IDF 6-work area",
+            "options": [
+              "2, 1, 3, 1, 5, 4, 6",
+              "2, 1, 3, 4, 5, 4, 6",
+              "6, 1, 3, 4, 5, 4, 6",
+              "2, 1, 5, 1, 3, 4, 6"
+            ],
+            "answer": 0
+          },
+          {
+            "question": "Compared to SMF, MMF cable costs more and generally works with laser-based emitters but spans the longest distances and is used in higher-bandwidth applications.",
+            "options": [
+              "True",
+              "False"
+            ],
+            "answer": 1
+          },
+          {
+            "question": "Which type of interference is caused by wires in the same cabling bundle?",
+            "options": [
+              "crosstalk",
+              "eavesdropping",
+              "RFI",
+              "attenuation"
+            ],
+            "answer": 0
+          },
+          {
+            "question": "What is the maximum bandwidth for a network cable using category 5e UTP cable?",
+            "options": [
+              "10 Mbps",
+              "100 Mbps",
+              "16 Mbps",
+              "1000 Mbps"
+            ],
+            "answer": 3
+          }
+        ]
+      }
+      
+      

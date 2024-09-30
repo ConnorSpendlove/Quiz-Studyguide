@@ -3,7 +3,7 @@ let quizData; // To store the loaded quiz data
 // Load quiz data from a JSON file based on the URL parameter
 function loadQuizData() {
     const urlParams = new URLSearchParams(window.location.search);
-    const quizUrl = urlParams.get('quizUrl');  // e.g., "../quizzes/math_quiz1.json"
+    const quizUrl = urlParams.get('quizUrl'); 
 
     fetch(quizUrl)
         .then(response => {
