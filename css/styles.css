@@ -119,3 +119,9 @@ ul li a:hover {
     font-size: 20px;
     margin-bottom: 20px;
 }
+
+.quiz-note {
+    font-size: small;
+    font-style: italic;
+    margin: 0;
+}
