@@ -48,6 +48,12 @@
             "multi_select": true
         },
         {
+            "question": "What are examples of output devices? (Choose all that apply.)",
+            "options": ["printer","keyboard","speakers","monitor","mouse"],
+            "correct_options": [0, 2, 3],
+            "multi_select": true
+        },
+        {
             "question": "Air waves are an example of what type of network component?",
             "options": ["network protocol", "network interface card", "network medium", "interconnecting device"],
             "answer": 2
@@ -576,8 +582,641 @@
               "1000 Mbps"
             ],
             "answer": 3
-          }
-        ]
+          },
+          {
+            "question": "Which of the following is a length of cable that connects a computer to either a networking device or to an RJ-45 jack?",
+            "options": [
+              "patch panel",
+              "backbone cable",
+              "cable segment",
+              "patch cable"
+            ],
+            "answer": 3
+          },
+          {
+            "question": "Which of the following is NOT one of the main differences between the types of network cabling?",
+            "options": [
+              "the type of signal that the media can transmit",
+              "the distance that a signal can travel",
+              "the speed at which the signal can be sent",
+              "the ability to send and receive signals"
+            ],
+            "answer": 3
+          },
+          {
+            "question": "The length of cable between the wall jack and a patch panel is called vertical cabling.",
+            "options": [
+              "True",
+              "False"
+            ],
+            "answer": 1
+          },
+          {
+            "question": "Which type of wireless technology bounces transmissions off walls and ceilings to deliver signals from sender to receiver and is often used with TV remotes?",
+            "options": [
+              "microwave",
+              "narrowband radio",
+              "scatter infrared",
+              "laser"
+            ],
+            "answer": 2
+          },
+          {
+            "question": "Because fiber-optic cabling uses light pulses instead of electrical signals, it is immune to interference and highly resistant to eavesdropping.",
+            "options": [
+              "True",
+              "False"
+            ],
+            "answer": 0
+          },
+          {
+            "question": "What is the maximum cable length for both category 5e and category 6 UTP cable?",
+            "options": [
+              "20 m",
+              "100 m",
+              "10 m",
+              "1000 m"
+            ],
+            "answer": 1
+          },
+          {
+            "question": "What type of wireless transmission technology is used for 802.11n networks running at 2.4 GHz?",
+            "options": [
+              "laser",
+              "narrowband radio",
+              "DSSS",
+              "OFDM"
+            ],
+            "answer": 3
+          },
+          {
+            "question": "You are instructing a cable installer where to run the UTP cable that goes from the work area on the third floor of your building to the place where it connects with a patch panel and switches. To which facility should you tell the installer to run the cable?",
+            "options": [
+              "Equipment room",
+              "Point of presence",
+              "IDF",
+              "MDF"
+            ],
+            "answer": 2
+          },
+          {
+            "question": "You will be installing UTP cable at a new facility. You have concerns that some of the cable runs are excessively long. What tool should you use to determine the length of your cable runs?",
+            "options": [
+              "OPM",
+              "TDR",
+              "Tone generator",
+              "Multimeter"
+            ],
+            "answer": 1
+          },
+          {
+            "question": "In an MDI device, which two pins does the device use to transmit?",
+            "options": [
+                "3 and 4",
+                "1 and 2",
+                "3 and 6",
+                "4 and 6"
+            ],
+            "answer": 1
+        },
+        {
+            "question": "Which of the following are types of infrared LANs? (Choose all that apply.)",
+            "options": [
+                "reflective",
+                "narrowband",
+                "scatter",
+                "line-of-sight",
+                "microwave"
+            ],
+            "correct_options": [0, 2, 3],
+            "multi_select": true
+
+        },
+        {
+            "question": "You are running a length of fiber optic cable between two wiring closets. What best describes the cable you are running?",
+            "options": [
+                "work area cable",
+                "structured cable",
+                "horizontal cable",
+                "backbone cable"
+            ],
+            "answer": 3
+        },
+        {
+            "question": "You are asked to make an inventory of all the cables and connections in your network. What are you being asked to inventory?",
+            "options": [
+                "cable plant",
+                "horizontal wiring",
+                "work areas",
+                "telecommunications closets"
+            ],
+            "answer": 0
+        },
+        {
+            "question": "An Ethernet cable runs across a warehouse that is 120 meters in length. The bit signals are so weak that they cannot be accurately read by the receiving station. What is the term for this problem?",
+            "options": [
+                "electromagnetic interference",
+                "crosstalk",
+                "attenuation",
+                "radio frequency interference"
+            ],
+            "answer": 2
+        },
+        {
+            "question": "Although different networking standards specify different media, bandwidth, and media length, they all use the same type of encoding.",
+            "options": [
+                "True",
+                "False"
+            ],
+            "answer": 1
+        },
+        {
+            "question": "IPX/SPX is considered the protocol suite of the Internet, and it is the most widely used protocol suite in LANs.",
+            "options": [
+              "True",
+              "False"
+            ],
+            "answer": 0
+          },
+          {
+            "question": "What are you likely to find in a DNS zone?",
+            "options": [
+              "MAC address-IP address pairs",
+              "hostname-IP address pairs",
+              "FQDN-MAC address pairs",
+              "IP address-scope pairs"
+            ],
+            "answer": 1
+          },
+          {
+            "question": "What is the unit of information called after the Internetwork layer places its header on a datagram?",
+            "options": [
+              "packet",
+              "frame",
+              "segment",
+              "data"
+            ],
+            "answer": 0
+          },
+          {
+            "question": "Which of the following is a function of the Application layer?",
+            "options": [
+              "data formatting and translation",
+              "protects data with a checksum",
+              "provides frame error detection in the form of a CRC code",
+              "routes packets through an internetwork"
+            ],
+            "answer": 0
+          },
+          {
+            "question": "Which protocol is used to access a Windows desktop interface remotely?",
+            "options": [
+              "SMB",
+              "RDP",
+              "FTP",
+              "SSH"
+            ],
+            "answer": 1
+          },
+          {
+            "question": "Which of the following is the correct order of DHCP packets when a computer requests its IP address configuration?",
+            "options": [
+              "DHCPDiscover, DHCPOffer, DHCPRequest, DHCPAck",
+              "DHCPDiscover, DHCPRequest, DHCPOffer, DHCPAck",
+              "DHCPRequest, DHCPDiscover, DHCPOffer, DHCPAck",
+              "DHCPOffer, DHCPRequest, DHCPDiscover, DHCPAck"
+            ],
+            "answer": 0
+          },
+          {
+            "question": "Which protocol uses TCP port 21 by default?",
+            "options": [
+              "IMAP",
+              "FTP",
+              "ARP",
+              "ICMP"
+            ],
+            "answer": 1
+          },
+          {
+            "question": "What field in the Transport layer header can TCP adjust to provide flow control?",
+            "options": [
+              "segments",
+              "window size",
+              "SYN",
+              "sequence number"
+            ],
+            "answer": 1
+          },
+          {
+            "question": "In which layer does Ethernet operate?",
+            "options": [
+              "Transport",
+              "Network Access",
+              "Internetwork",
+              "Application"
+            ],
+            "answer": 1
+          },
+          {
+            "question": "Which of the following is a function of the Internetwork layer?",
+            "options": [
+              "delivers packets efficiently",
+              "breaks data into segments",
+              "provides CRC error checking",
+              "provides a physical address"
+            ],
+            "answer": 0
+          },
+          {
+            "question": "Which of the following is NOT an Application layer protocol?",
+            "options": [
+              "DHCP",
+              "SMTP",
+              "DNS",
+              "TCP"
+            ],
+            "answer": 3
+          },
+          {
+            "question": "What is the unit of information that the Transport layer works with?",
+            "options": [
+              "frame",
+              "segment",
+              "signal",
+              "packet"
+            ],
+            "answer": 1
+          },
+          {
+            "question": "If you want a computer to be assigned the same IP address each time it requests an IP address, what DHCP option should you configure?",
+            "options": [
+              "Scope",
+              "Exclusion",
+              "Gateway",
+              "Reservation"
+            ],
+            "answer": 3
+          },
+          {
+            "question": "TCP establishes a connection with the destination device using which process?",
+            "options": [
+              "flow control",
+              "encapsulation",
+              "windowing",
+              "three-way handshake"
+            ],
+            "answer": 3
+          },
+          {
+            "question": "The Internetwork layer includes the ICMP and TCP protocols of the TCP/IP suite.",
+            "options": [
+              "True",
+              "False"
+            ],
+            "answer": 1
+          },
+          {
+            "question": "Which protocol is responsible for determining the MAC address associated with each IP address and keeping a table of its results?",
+            "options": [
+              "MAC",
+              "NAT",
+              "ARP",
+              "DNS"
+            ],
+            "answer": 2
+          },
+          {
+            "question": "How can the web address www.cengage.com be described?",
+            "options": [
+              "NetBIOS",
+              "root",
+              "subdomain",
+              "FQDN"
+            ],
+            "answer": 3
+          },
+          {
+            "question": "What type of record do you need to create so the address of your mail server can be resolved?",
+            "options": [
+              "MX",
+              "CNAME",
+              "PTR",
+              "SRV"
+            ],
+            "answer": 0
+          },
+          {
+            "question": "The first packet in the four-packet exchange between a DHCP client and server is the DHCPRequest.",
+            "options": [
+              "True",
+              "False"
+            ],
+            "answer": 1
+          },
+          {
+            "question": "DNS is a protocol that automatically provides a computer with its IP address configuration.",
+            "options": [
+              "True",
+              "False"
+            ],
+            "answer": 1
+          },
+          {
+            "question": "Which part of the address www.marketing.localdomain.org is the top-level domain name?",
+            "options": [
+              "www",
+              "marketing",
+              "localdomain",
+              "org"
+            ],
+            "answer": 3
+          },
+          {
+            "question": "Which of the following is NOT a function of the Network Access layer?",
+            "options": [
+              "provides a MAC address for the network interface",
+              "transmits and receives bit signals",
+              "delivers packets efficiently",
+              "receives packets from the Internetwork layer and creates a frame"
+            ],
+            "answer": 2
+          },
+          {
+            "question": "In which layer does a router operate?",
+            "options": [
+              "Transport",
+              "Network Access",
+              "Internetwork",
+              "Application"
+            ],
+            "answer": 2
+          },
+          {
+            "question": "The Transport layer uses port numbers to identify the source and destination Application-layer protocol of the data that it contains.",
+            "options": [
+              "True",
+              "False"
+            ],
+            "answer": 0
+          },
+          {
+            "question": "Which of the following is NOT a function of the Network Access layer?",
+            "options": [
+              "transmits and receives bit signals",
+              "delivers packets efficiently",
+              "provides a MAC address for the network interface",
+              "receives packets from the Internetwork layer and creates a frame"
+            ],
+            "answer": 1
+          },
+          {
+            "question": "When a TCP session begins, what is the name of the first segment that is transferred?",
+            "options": [
+              "RST",
+              "FIN",
+              "ACK",
+              "SYN"
+            ],
+            "answer": 3
+          },
+          {
+            "question": "What is the hexadecimal number F equal to in binary?",
+            "options": [
+              "1111",
+              "1011",
+              "1001",
+              "0011"
+            ],
+            "answer": 0
+          },
+          {
+            "question": "IPv6 addresses are written as eight 16-bit hexadecimal numbers separated by colons.",
+            "options": [
+              "True",
+              "False"
+            ],
+            "answer": 0
+          },
+          {
+            "question": "The decimal equivalent of the binary number 10000001 is 133.",
+            "options": [
+              "True",
+              "False"
+            ],
+            "answer": 1
+          },
+          {
+            "question": "How many bits are available in an IPv6 network for creating subnets when the prefix is /48 and the host ID is 64 bits?",
+            "options": [
+              "32",
+              "64",
+              "48",
+              "16"
+            ],
+            "answer": 3
+          },
+          {
+            "question": "Which subnet mask should you use if you want 16 bits of host address space?",
+            "options": [
+              "255.255.255.0",
+              "255.255.0.0",
+              "255.255.255.16",
+              "255.16.0.0"
+            ],
+            "answer": 1
+          },
+          {
+            "question": "You have just run the ipconfig command and after you did you see that your IP address is 0.0.0.0. What option did you use on the ipconfig command?",
+            "options": [
+              "/flush",
+              "/release",
+              "/all",
+              "/renew"
+            ],
+            "answer": 1
+          },
+          {
+            "question": "Route summarization can combine multiple routing table entries into a single entry.",
+            "options": [
+              "True",
+              "False"
+            ],
+            "answer": 0
+          },
+          {
+            "question": "When using the route command at a command prompt, which entry indicates the default route?",
+            "options": [
+              "Network Destination 255.255.255.255 Netmask 0.0.0.0",
+              "Network Destination 0.0.0.0 Netmask 255.255.255.255",
+              "Network Destination 0.0.0.0 Netmask 0.0.0.0",
+              "Network Destination 255.255.255.255 Netmask 255.255.255.255"
+            ],
+            "answer": 2
+          },
+          {
+            "question": "Which command displays the contents of the local DNS cache?",
+            "options": [
+              "nslookup /show",
+              "netsh show dnscache",
+              "ipconfig /displaydns",
+              "ping /dns"
+            ],
+            "answer": 2
+          },
+          {
+            "question": "You are the network administrator for a company that uses a private addressing scheme for its internal network. You have 300 workstations that regularly access the Internet. What process must be in operation on your network to allow all the workstations to have access to the Internet using only one public IP address?",
+            "options": [
+              "DHCP",
+              "ARP",
+              "DNS",
+              "PAT"
+            ],
+            "answer": 3
+          },
+          {
+            "question": "You computer's IP address is 201.18.149.37/28. Which of the following is a valid default gateway for this address?",
+            "options": [
+              "201.18.149.46",
+              "201.18.149.32",
+              "201.18.149.17",
+              "201.18.149.48"
+            ],
+            "answer": 0
+          },
+          {
+            "question": "An IP address is composed of 48 bits that are grouped together into 8-bit octets and are represented by a decimal number from 0 to 255.",
+            "options": [
+              "True",
+              "False"
+            ],
+            "answer": 1
+          },
+          {
+            "question": "What is the decimal equivalent to the hexadecimal number D?",
+            "options": [
+              "10",
+              "15",
+              "13",
+              "12"
+            ],
+            "answer": 2
+          },
+          {
+            "question": "If your original network address with prefix is 172.16.0.0/16, what should your new network address with prefix be if you need 16 subnets?",
+            "options": [
+              "172.16.0.0/20",
+              "172.16.16.0/16",
+              "172.16.0.0/24",
+              "172.16.0.0/28"
+            ],
+            "answer": 0
+          },
+          {
+            "question": "Which part of a computer's IP address configuration indicates the portion of the address that specifies the network ID?",
+            "options": [
+              "DNS address",
+              "MAC address",
+              "default gateway",
+              "subnet mask"
+            ],
+            "answer": 3
+          },
+            {
+              "question": "You are the network administrator for a company that uses a private addressing scheme for its internal network. You have 300 workstations that regularly access the Internet. What process must be in operation on your network to allow all the workstations to have access to the Internet using only one public IP address?",
+              "options": [
+                "DNS",
+                "PAT",
+                "ARP",
+                "DHCP"
+              ],
+              "answer": 1
+            },
+            {
+              "question": "What is the decimal equivalent to the binary number 11100000?",
+              "options": [
+                "224",
+                "98",
+                "160",
+                "196"
+              ],
+              "answer": 0
+            },
+            {
+              "question": "How many host addresses are available on a Class C network?",
+              "options": [
+                "65536",
+                "256",
+                "254",
+                "65534"
+              ],
+              "answer": 2
+            },
+            {
+              "question": "Which of the following are solutions to the shortage of available IPv4 addresses? (Choose all that apply.)",
+              "options": [
+                "subnetting",
+                "NAT",
+                "IPv6",
+                "private addressing",
+                "supernetting"
+              ],
+              "correct_options": [0,1,2,3],
+              "multi_select": true
+
+            },
+            {
+              "question": "An IP address consists of four octets separated by periods. Which part of this address denotes its class?",
+              "options": [
+                "second octet",
+                "first octet",
+                "fourth octet",
+                "third octet"
+              ],
+              "answer": 1
+            },
+            {
+                "question": "The last 64 bits of an IPv6 address are the interface identifier. What is frequently used as part of the interface identifier?",
+                "options": [
+                "an ARP broadcast",
+                "a DHCP server",
+                "the IP address",
+                "the MAC address"
+                ],
+                "answer": 3
+            },
+            {
+                "question": "To determine the network ID of an IP address, computers use a logical AND operation between the IP address and the subnet mask.",
+                "options": [
+                "True",
+                "False"
+                ],
+                "answer": 0
+            },
+            {
+                "question": "Your network address is 192.168.100.0. What prefix allows you to assign 30 host addresses?",
+                "options": [
+                "/28",
+                "/29",
+                "/27",
+                "/30"
+                ],
+                "answer": 2
+            },
+            {
+                "question": "What is the network ID of the IP address 172.19.48.16 with subnet mask 255.255.240.0?",
+                "options": [
+                  "172.19.32.0",
+                  "172.19.48.0",
+                  "172.19.0.0",
+                  "172.19.240.0"
+                ],
+                "answer": 1
+              }
+              ]
+              
+          
+
       }
       
-      
+
