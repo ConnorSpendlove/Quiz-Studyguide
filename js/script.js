@@ -1,4 +1,5 @@
 let quizData; // To store the loaded quiz data
+let userSelections = {}; // To store user selections for local storage
 
 // Load quiz data from a JSON file based on the URL parameter
 function loadQuizData() {
@@ -23,7 +24,8 @@ function loadQuizData() {
         })
         .then(data => {
             quizData = data;  // Store the quiz data globally
-            renderQuiz();     // Render the quiz
+            loadUserSelections(); // Load user selections from local storage
+            renderQuiz();     // Render the quiz after loading selections
         })
         .catch(error => {
             document.getElementById('quiz-container').innerText = 'Failed to load quiz.';
@@ -63,15 +65,49 @@ function renderQuiz() {
             }
             optionInput.value = i;
 
+            // Check if the user has previously selected this option
+            if (userSelections[index] && userSelections[index].includes(i)) {
+                optionInput.checked = true; // Pre-check the option
+            }
+
+            // Save user selection in local storage when checked/unchecked
+            optionInput.addEventListener('change', function() {
+                if (item.multi_select) {
+                    if (!userSelections[index]) {
+                        userSelections[index] = [];
+                    }
+                    if (this.checked) {
+                        userSelections[index].push(i);
+                    } else {
+                        userSelections[index] = userSelections[index].filter(option => option !== i);
+                    }
+                } else {
+                    userSelections[index] = [i]; // For single-select, store only the selected option
+                }
+                saveUserSelections(); // Save selections to local storage
+            });
+
             optionLabel.appendChild(optionInput);
             optionLabel.append(option);
-
             questionDiv.appendChild(optionLabel);
             questionDiv.appendChild(document.createElement("br"));
         });
 
         quizContainer.appendChild(questionDiv);
     });
+}
+
+// Save user selections to local storage
+function saveUserSelections() {
+    localStorage.setItem('userSelections', JSON.stringify(userSelections));
+}
+
+// Load user selections from local storage
+function loadUserSelections() {
+    const savedSelections = localStorage.getItem('userSelections');
+    if (savedSelections) {
+        userSelections = JSON.parse(savedSelections);
+    }
 }
 
 // Function to reset the quiz
@@ -81,6 +117,8 @@ function resetQuiz() {
     document.getElementById("total-questions").innerText = '0';  // Reset total questions display
     document.getElementById("result").innerHTML = '';  // Clear previous results
     document.getElementById("submit-btn").disabled = false;  // Re-enable submit button
+    userSelections = {}; // Reset user selections
+    localStorage.removeItem('userSelections'); // Clear local storage
     loadQuizData();  // Reload the quiz
 }
 
@@ -90,27 +128,43 @@ function submitQuiz() {
     let score = 0;
 
     quizData.questions.forEach((item, index) => {
+        const questionDiv = document.querySelectorAll(".question")[index];
+
         if (item.multi_select) {
             // Handle multi-select (checkbox) questions
-            const selectedOptions = document.querySelectorAll(`input[type="checkbox"]:checked`);
-            const selectedIndices = Array.from(selectedOptions).map(option => parseInt(option.value));
+            const selectedOptions = Array.from(document.querySelectorAll(`input[name="question${index}"]:checked`)).map(option => parseInt(option.value));
             const correctAnswers = item.correct_options;
 
+            // Store the user selection
+            userSelections[index] = selectedOptions;
+
             // Compare selected checkboxes with correct options
-            if (selectedIndices.length === correctAnswers.length && selectedIndices.every(val => correctAnswers.includes(val))) {
+            if (selectedOptions.length === correctAnswers.length && selectedOptions.every(val => correctAnswers.includes(val))) {
                 score++;
+                // Change background color to soft green for correct answers
+                questionDiv.style.backgroundColor = '#d4edda'; // Soft green
+            } else {
+                // Change background color to soft red for incorrect answers
+                questionDiv.style.backgroundColor = '#f8d7da'; // Soft red
             }
         } else {
             // Handle single-select (radio) questions
             const selectedOption = document.querySelector(`input[name="question${index}"]:checked`);
 
+            // Store the user selection
+            userSelections[index] = selectedOption ? [parseInt(selectedOption.value)] : [];
+
             if (selectedOption && parseInt(selectedOption.value) === item.answer) {
                 score++;
+                // Change background color to soft green for correct answers
+                questionDiv.style.backgroundColor = '#d4edda'; // Soft green
+            } else {
+                // Change background color to soft red for incorrect answers
+                questionDiv.style.backgroundColor = '#f8d7da'; // Soft red
             }
         }
 
         // Reveal the correct answer
-        const questionDiv = document.querySelectorAll(".question")[index];
         const correctAnswer = document.createElement("p");
 
         if (item.multi_select) {
@@ -131,6 +185,9 @@ function submitQuiz() {
     document.getElementById("modal-score-value").innerText = score;
     document.getElementById("modal-total").innerText = quizData.questions.length;
     document.getElementById("score-modal").style.display = "block";
+
+    // Save selections to local storage
+    saveUserSelections();
 
     // Disable submit button after submission
     document.getElementById("submit-btn").disabled = true;
