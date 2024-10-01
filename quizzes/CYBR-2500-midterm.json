@@ -1486,7 +1486,32 @@
                   "Data Link"
                 ],
                 "answer": 2
+              },
+              {
+                "question": "Routers can be used to control network access by inspecting the source and destination address information of packets.",
+                "options": [
+                  "True",
+                  "False"
+                ],
+                "answer": 0
+              },
+              {
+                "question": "All network switches require substantial configuration before they can be put into operation in a network.",
+                "options": [
+                  "True",
+                  "False"
+                ],
+                "answer": 1
+              },
+              {
+                "question": "A distance-vector protocol sends updates to its neighbors that include the contents of its routing table.",
+                "options": [
+                  "True",
+                  "False"
+                ],
+                "answer": 0
               }
+              
               
               
               ]
