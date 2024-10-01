@@ -23,7 +23,7 @@ function loadQuizData() {
         })
         .then(data => {
             quizData = data;  // Store the quiz data globally
-            renderQuiz();
+            renderQuiz();     // Render the quiz
         })
         .catch(error => {
             document.getElementById('quiz-container').innerText = 'Failed to load quiz.';
@@ -31,9 +31,16 @@ function loadQuizData() {
         });
 }
 
+// Shuffle the questions
+function shuffleQuestions() {
+    quizData.questions.sort(() => Math.random() - 0.5); // Shuffle questions randomly
+    renderQuiz(); // Re-render the quiz with shuffled questions
+}
+
 // Render the quiz
 function renderQuiz() {
     const quizContainer = document.getElementById("quiz-container");
+    quizContainer.innerHTML = ""; // Clear previous questions
     document.getElementById("quiz-title").innerText = quizData.title;
 
     quizData.questions.forEach((item, index) => {
@@ -120,3 +127,9 @@ function submitQuiz() {
 
 // Initialize the quiz on page load
 window.onload = loadQuizData;
+
+// Add randomize button functionality
+const randomizeButton = document.createElement("button");
+randomizeButton.innerText = "Randomize?";
+randomizeButton.onclick = shuffleQuestions; // Set the button click event
+document.getElementById("quiz-container").insertAdjacentElement("beforebegin", randomizeButton); // Insert the button above the quiz
