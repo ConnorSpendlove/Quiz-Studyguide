@@ -31,8 +31,6 @@ function loadQuizData() {
         });
 }
 
-
-
 // Render the quiz
 function renderQuiz() {
     const quizContainer = document.getElementById("quiz-container");
@@ -75,6 +73,8 @@ function submitQuiz() {
     let score = 0;
 
     quizData.questions.forEach((item, index) => {
+        const questionDiv = document.querySelectorAll(".question")[index];
+        
         if (item.multi_select) {
             // Handle multi-select (checkbox) questions
             const selectedOptions = document.querySelectorAll(`input[type="checkbox"]:checked`);
@@ -84,6 +84,9 @@ function submitQuiz() {
             // Compare selected checkboxes with correct options
             if (selectedIndices.length === correctAnswers.length && selectedIndices.every(val => correctAnswers.includes(val))) {
                 score++;
+                questionDiv.style.backgroundColor = "lightgreen";  // Highlight correct answer in green
+            } else {
+                questionDiv.style.backgroundColor = "lightcoral";  // Highlight incorrect answer in red
             }
 
         } else {
@@ -92,11 +95,13 @@ function submitQuiz() {
 
             if (selectedOption && parseInt(selectedOption.value) === item.answer) {
                 score++;
+                questionDiv.style.backgroundColor = "lightgreen";  // Highlight correct answer in green
+            } else {
+                questionDiv.style.backgroundColor = "lightcoral";  // Highlight incorrect answer in red
             }
         }
 
         // Reveal the correct answer
-        const questionDiv = document.querySelectorAll(".question")[index];
         const correctAnswer = document.createElement("p");
 
         if (item.multi_select) {
