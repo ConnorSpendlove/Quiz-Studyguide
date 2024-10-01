@@ -74,14 +74,22 @@ function renderQuiz() {
     });
 }
 
-// Submit the quiz and calculate score
+// Function to reset the quiz
+function resetQuiz() {
+    document.getElementById("quiz-container").innerHTML = '';  // Clear quiz container
+    document.getElementById("score-value").innerText = '0';  // Reset score display
+    document.getElementById("total-questions").innerText = '0';  // Reset total questions display
+    document.getElementById("result").innerHTML = '';  // Clear previous results
+    document.getElementById("submit-btn").disabled = false;  // Re-enable submit button
+    loadQuizData();  // Reload the quiz
+}
+
+// Function to submit the quiz
 function submitQuiz() {
     const resultDiv = document.getElementById("result");
     let score = 0;
 
     quizData.questions.forEach((item, index) => {
-        const questionDiv = document.querySelectorAll(".question")[index];
-        
         if (item.multi_select) {
             // Handle multi-select (checkbox) questions
             const selectedOptions = document.querySelectorAll(`input[type="checkbox"]:checked`);
@@ -91,24 +99,18 @@ function submitQuiz() {
             // Compare selected checkboxes with correct options
             if (selectedIndices.length === correctAnswers.length && selectedIndices.every(val => correctAnswers.includes(val))) {
                 score++;
-                questionDiv.style.backgroundColor = "lightgreen";  // Highlight correct answer in green
-            } else {
-                questionDiv.style.backgroundColor = "lightcoral";  // Highlight incorrect answer in red
             }
-
         } else {
             // Handle single-select (radio) questions
             const selectedOption = document.querySelector(`input[name="question${index}"]:checked`);
 
             if (selectedOption && parseInt(selectedOption.value) === item.answer) {
                 score++;
-                questionDiv.style.backgroundColor = "lightgreen";  // Highlight correct answer in green
-            } else {
-                questionDiv.style.backgroundColor = "lightcoral";  // Highlight incorrect answer in red
             }
         }
 
         // Reveal the correct answer
+        const questionDiv = document.querySelectorAll(".question")[index];
         const correctAnswer = document.createElement("p");
 
         if (item.multi_select) {
@@ -121,8 +123,22 @@ function submitQuiz() {
         questionDiv.appendChild(correctAnswer);
     });
 
-    resultDiv.innerText = `You scored ${score} out of ${quizData.questions.length}.`;
+    // Update score display at the top
+    document.getElementById("score-value").innerText = score;
+    document.getElementById("total-questions").innerText = quizData.questions.length;
+
+    // Update and show modal with score
+    document.getElementById("modal-score-value").innerText = score;
+    document.getElementById("modal-total").innerText = quizData.questions.length;
+    document.getElementById("score-modal").style.display = "block";
+
+    // Disable submit button after submission
     document.getElementById("submit-btn").disabled = true;
+}
+
+// Function to close the modal
+function closeModal() {
+    document.getElementById("score-modal").style.display = "none";
 }
 
 // Initialize the quiz on page load
@@ -133,3 +149,18 @@ const randomizeButton = document.createElement("button");
 randomizeButton.innerText = "Randomize?";
 randomizeButton.onclick = shuffleQuestions; // Set the button click event
 document.getElementById("quiz-container").insertAdjacentElement("beforebegin", randomizeButton); // Insert the button above the quiz
+
+// Function to scroll to the top of the page
+function scrollToTop() {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+}
+
+// Show or hide the "Back to Top" button based on scroll position
+window.onscroll = function() {
+    const backToTopButton = document.getElementById('back-to-top');
+    if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+        backToTopButton.classList.add('show');
+    } else {
+        backToTopButton.classList.remove('show');
+    }
+};
