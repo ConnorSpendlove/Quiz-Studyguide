@@ -1212,7 +1212,283 @@
                   "172.19.240.0"
                 ],
                 "answer": 1
+              },
+              {
+                "question": "Which of the following is an invalid IP address/prefix to assign to a host?",
+                "options": [
+                  "172.19.32.0",
+                  "172.16.255.128/25",
+                  "172.19.0.0",
+                  "172.19.240.0"
+                ],
+                "answer": 1
+              },
+              {
+                "question": "Which IP address is a Class C address?",
+                "options": [
+                  "193.19.101.11",
+                  "10.16.255.1",
+                  "90.19.0.0",
+                  "140.19.240.0"
+                ],
+                "answer": 0
+              },
+              {
+                "question": "The maximum transmission unit for Ethernet is 1518 bytes.",
+                "options": [
+                  "True",
+                  "False"
+                ],
+                "answer": 0
+              },
+              {
+                "question": "The IEEE separated the OSI model Physical layer into the LLC sublayer and the MAC sublayer.",
+                "options": [
+                  "True",
+                  "False"
+                ],
+                "answer": 1
+              },
+              {
+                "question": "One of the problems that can occur in the Network layer is the incorrect configuration of a host's IP address.",
+                "options": [
+                  "True",
+                  "False"
+                ],
+                "answer": 0
+              },
+              {
+                "question": "How can you find out what your MAC address is? (Choose all that apply.)",
+                "options": [
+                  "Right-click on the Local Area Connection and choose status.",
+                  "Open a command prompt and type the command ipconfig /all.",
+                  "Open a command prompt and type the command getmac.",
+                  "Open a command prompt and type the command arp -d."
+                ],
+                "correct_options": [0, 1, 2],
+                "multi_select": true
+              },
+              {
+                "question": "The Network layer communicates with the Data Link layer and the Session layer.",
+                "options": [
+                  "True",
+                  "False"
+                ],
+                "answer": 1
+              },
+              {
+                "question": "Which layer is responsible for establishing communication setup between the source and destination computers?",
+                "options": [
+                  "Session",
+                  "Application",
+                  "Transport",
+                  "Presentation"
+                ],
+                "answer": 0
+              },
+              {
+                "question": "What is the IEEE standard that governs all forms of Ethernet media and interfaces?",
+                "options": [
+                  "802.2",
+                  "802.15",
+                  "802.3",
+                  "802.11"
+                ],
+                "answer": 2
+              },
+              {
+                "question": "One job that a router performs is that of gatekeeper, which means that it can be configured to only allow certain packets access into the network based on a list of rules. What is that process called?",
+                "options": [
+                  "media control",
+                  "signal bounce",
+                  "access control",
+                  "packet forwarding"
+                ],
+                "answer": 2
+              },
+              {
+                "question": "Which of the following is the correct order of the layers of the OSI model from layer 1 to layer 7?",
+                "options": [
+                  "Application, Session, Transport, Presentation, Network, Data Link, Physical",
+                  "Physical, Session, Network, Data Link, Transport, Presentation, Application",
+                  "Physical, Data Link, Network, Transport, Session, Presentation, Application",
+                  "Application, Presentation, Session, Transport, Network, Data Link, Physical"
+                ],
+                "answer": 2
+              },
+              {
+                "question": "What information would you find in the header of a Transport layer PDU?",
+                "options": [
+                  "cyclic redundancy check",
+                  "source MAC address",
+                  "window size",
+                  "destination IP address"
+                ],
+                "answer": 2
+              },
+              {
+                "question": "Which layer of the OSI model is responsible for protocol conversion, if necessary?",
+                "options": [
+                  "Session",
+                  "Presentation",
+                  "Transport",
+                  "Application"
+                ],
+                "answer": 1
+              },
+              {
+                "question": "What is a PDU?",
+                "options": [
+                  "It is the name given to the unit of information used by each layer.",
+                  "It is an Application layer protocol that handles delivery of messages.",
+                  "It is a Network layer protocol that handles path determination.",
+                  "It is a unit of measurement for the maximum amount of data that can be transferred."
+                ],
+                "answer": 0
+              },
+              {
+                "question": "You are working at the help desk and you get a message that a user cannot access the Internet. You open a command prompt, ping the workstation's IP address, and get a response. You ask the user to try the Internet again. He does so with the same result—no connection. Which type of device is most likely to be the problem?",
+                "options": [
+                  "Presentation layer device",
+                  "Network layer device",
+                  "Data Link layer device",
+                  "Physical layer device"
+                ],
+                "answer": 1
+              },
+              {
+                "question": "You are using tracert to determine the path a packet takes across your internetwork. Which OSI Model layer are you examining?",
+                "options": [
+                  "Session",
+                  "Transport",
+                  "Data Link",
+                  "Network"
+                ],
+                "answer": 3
+              },
+              {
+                "question": "The Transport layer is the same in both the OSI model and the TCP/IP model.",
+                "options": [
+                  "True",
+                  "False"
+                ],
+                "answer": 0
+              },
+              {
+                "question": "What does the Transport layer use to make sure that a message is reassembled correctly on the receiving device?",
+                "options": [
+                  "destination port number",
+                  "sequence number",
+                  "source port number",
+                  "window size"
+                ],
+                "answer": 1
+              },
+              {
+                "question": "At what layer do NICs operate?",
+                "options": [
+                  "Data Link",
+                  "Physical",
+                  "Transport",
+                  "Network"
+                ],
+                "answer": 0
+              },
+              {
+                "question": "Which layer is responsible for the encoding of signals?",
+                "options": [
+                  "3",
+                  "1",
+                  "5",
+                  "7"
+                ],
+                "answer": 1
+              },
+              {
+                "question": "What layer is responsible for making sure that the data that it sends and receives is in a format that the receiving and sending computers can understand?",
+                "options": [
+                  "6",
+                  "7",
+                  "4",
+                  "5"
+                ],
+                "answer": 0
+              },
+              {
+                "question": "What does the Transport layer use to determine the size of a segment?",
+                "options": [
+                  "MTU",
+                  "TCP",
+                  "LLC",
+                  "PDU"
+                ],
+                "answer": 0
+              },
+              {
+                "question": "Which of the following are protocols that you find at the Application layer of the OSI model? (Choose all that apply.)",
+                "options": [
+                  "ICMP",
+                  "DHCP",
+                  "FTP",
+                  "TCP",
+                  "SNMP",
+                  "ARP"
+                ],
+                "correct_options": [1, 2, 4],
+                "multi_select": true
+              },
+              {
+                "question": "What function does the Logical Link Control sublayer of the Data Link layer provide?",
+                "options": [
+                  "controls access to network media",
+                  "coordinates communication between applications",
+                  "error recovery and flow control",
+                  "physical device addressing"
+                ],
+                "answer": 2
+              },
+              {
+                "question": "At each layer of the OSI model, data is appended to the original message and then sent on to the next lower layer. What is this process called?",
+                "options": [
+                  "deencapsulation",
+                  "packetization",
+                  "encapsulation",
+                  "checkpointing"
+                ],
+                "answer": 2
+              },
+              {
+                "question": "You are working at the help desk and you get a message that a user cannot access the Internet. You open a command prompt, ping the workstation's IP address, and get a response. You ask the user to try the Internet again. He does so with the same result-no connection. Which type of device is most likely to be the problem?",
+                "options": [
+                  "Data Link layer device",
+                  "Network layer device",
+                  "Presentation layer device",
+                  "Physical layer device"
+                ],
+                "answer": 1
+              },
+              {
+                "question": "What is the IEEE standard that sets the standards for wireless networking?",
+                "options": [
+                  "802.11",
+                  "802.15",
+                  "802.16",
+                  "802.3"
+                ],
+                "answer": 0
+              },
+              {
+                "question": "At which layer would you find errors that were caused by EMI?",
+                "options": [
+                  "Transport",
+                  "Network",
+                  "Physical",
+                  "Data Link"
+                ],
+                "answer": 2
               }
+              
+              
               ]
               
           
