@@ -1,5 +1,5 @@
 {
-    "title": "CYBR-2500-Midtem",
+    "title": "CYBR-2500-Midterm",
     "questions": [
         {
             "question": "A network that connects LANs in different countries is most likely a WAN.",
@@ -72,11 +72,6 @@
             "question": "Each component of a computer is designed to perform only one specific task—either input, processing, or output.",
             "options": ["True", "False"],
             "answer": 1
-        },
-        {
-            "question": "Which part of the network communication process is responsible for sending and receiving data to and from the network media?",
-            "options": ["user application", "network software", "network interface", "network protocol"],
-            "answer": 2
         },
         {
             "question": "What is one of the disadvantages of a server-based network compared to a peer-to-peer network?",
@@ -299,19 +294,9 @@
         "answer": 0
     },
     {
-        "question": "In which topology does a central device communicate with two or more other devices and is used in WANs where a main office has connections to several branch offices via a router?",
-        "options": ["switched","logical star","logical bus","Point-to-multipoint"],
-        "answer": 3
-    },
-    {
         "question": "With which kind of Wi-Fi antennas does the signal radiate out with equal strength in all directions?",
         "options": ["Unidirectional","Omnidirectional","Semidirectional","Multidirectional"],
         "answer": 1
-    },
-    {
-        "question": "What happens to Wi-Fi signals when they pass through solid objects like walls?",
-        "options": ["Reflections occur causing attenuation.","Scattering and multipath occurs.","Diffraction occurs and the signals are amplified.","Absorption occurs and the signals attenuate."],
-        "answer": 3
     },
     {
         "question": "When a wireless computer uses a peer-to-peer connection to directly connect to another wireless computer, it is operating in what mode?",
@@ -533,7 +518,8 @@
               "antenna",
               "patch panel"
             ],
-            "answer": [1, 2, 3, 4]
+            "correct_options": [1, 2, 3, 4],
+            "multi_select": true
           },
           {
             "question": "You hand a technician a crossover cable to make a connection between devices. Which device pair are you most likely asking him to connect?",

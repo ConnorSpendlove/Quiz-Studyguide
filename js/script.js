@@ -39,7 +39,6 @@ function shuffleQuestions() {
     renderQuiz(); // Re-render the quiz with shuffled questions
 }
 
-// Render the quiz
 function renderQuiz() {
     const quizContainer = document.getElementById("quiz-container");
     quizContainer.innerHTML = ""; // Clear previous questions
@@ -53,6 +52,7 @@ function renderQuiz() {
         questionTitle.innerText = `${index + 1}. ${item.question}`;
         questionDiv.appendChild(questionTitle);
 
+        // Create options for each question
         item.options.forEach((option, i) => {
             const optionLabel = document.createElement("label");
             const optionInput = document.createElement("input");
@@ -93,9 +93,42 @@ function renderQuiz() {
             questionDiv.appendChild(document.createElement("br"));
         });
 
-        quizContainer.appendChild(questionDiv);
+        // Add "Show Answer" button
+        const showAnswerBtn = document.createElement("button");
+        showAnswerBtn.innerText = "Show Answer";
+        showAnswerBtn.className = "show-answer-btn";
+
+        // Create a paragraph to display the correct answer
+        const correctAnswer = document.createElement("p");
+        correctAnswer.style.display = "none"; // Initially hidden
+
+        if (item.multi_select) {
+            const correctAnswersText = item.correct_options.map(i => item.options[i]).join(", ");
+            correctAnswer.innerHTML = `<strong>Correct Answers:</strong> ${correctAnswersText}`;
+        } else {
+            correctAnswer.innerHTML = `<strong>Correct Answer:</strong> ${item.options[item.answer]}`;
+        }
+
+        // Show correct answer on mousedown, hide on mouseup or mouseleave
+        showAnswerBtn.addEventListener("mousedown", () => {
+            correctAnswer.style.display = "block"; // Show the correct answer
+        });
+
+        showAnswerBtn.addEventListener("mouseup", () => {
+            correctAnswer.style.display = "none"; // Hide the correct answer
+        });
+
+        showAnswerBtn.addEventListener("mouseleave", () => {
+            correctAnswer.style.display = "none"; // Hide the correct answer
+        });
+
+        questionDiv.appendChild(showAnswerBtn); // Add the button to the question
+        questionDiv.appendChild(correctAnswer); // Add the correct answer paragraph
+
+        quizContainer.appendChild(questionDiv); // Add the question to the quiz container
     });
 }
+
 
 // Save user selections to local storage
 function saveUserSelections() {
@@ -122,58 +155,60 @@ function resetQuiz() {
     loadQuizData();  // Reload the quiz
 }
 
-// Function to submit the quiz
 function submitQuiz() {
     const resultDiv = document.getElementById("result");
     let score = 0;
 
     quizData.questions.forEach((item, index) => {
         const questionDiv = document.querySelectorAll(".question")[index];
+        let isCorrect = false;
+        let isPartiallyCorrect = false;
 
         if (item.multi_select) {
             // Handle multi-select (checkbox) questions
-            const selectedOptions = Array.from(document.querySelectorAll(`input[name="question${index}"]:checked`)).map(option => parseInt(option.value));
+            const selectedOptions = Array.from(document.querySelectorAll(`.question:nth-child(${index + 1}) input[type="checkbox"]:checked`)).map(option => parseInt(option.value));
             const correctAnswers = item.correct_options;
 
-            // Store the user selection
-            userSelections[index] = selectedOptions;
+            // Sort both arrays before comparison
+            selectedOptions.sort((a, b) => a - b);
+            correctAnswers.sort((a, b) => a - b);
 
-            // Compare selected checkboxes with correct options
-            if (selectedOptions.length === correctAnswers.length && selectedOptions.every(val => correctAnswers.includes(val))) {
-                score++;
-                // Change background color to soft green for correct answers
-                questionDiv.style.backgroundColor = '#d4edda'; // Soft green
-            } else {
-                // Change background color to soft red for incorrect answers
-                questionDiv.style.backgroundColor = '#f8d7da'; // Soft red
+            // Check if all selected answers are correct
+            isCorrect = selectedOptions.length === correctAnswers.length && selectedOptions.every((val, i) => val === correctAnswers[i]);
+
+            // Check if there are some correct answers but not all
+            const correctSelections = selectedOptions.filter(val => correctAnswers.includes(val));
+            if (!isCorrect && correctSelections.length > 0) {
+                isPartiallyCorrect = true;
             }
+
         } else {
             // Handle single-select (radio) questions
             const selectedOption = document.querySelector(`input[name="question${index}"]:checked`);
 
-            // Store the user selection
-            userSelections[index] = selectedOption ? [parseInt(selectedOption.value)] : [];
-
             if (selectedOption && parseInt(selectedOption.value) === item.answer) {
-                score++;
-                // Change background color to soft green for correct answers
-                questionDiv.style.backgroundColor = '#d4edda'; // Soft green
-            } else {
-                // Change background color to soft red for incorrect answers
-                questionDiv.style.backgroundColor = '#f8d7da'; // Soft red
+                isCorrect = true;
             }
         }
 
-        // Reveal the correct answer
-        const correctAnswer = document.createElement("p");
+        // Mark the question as correct, partially correct, or incorrect
+        if (isCorrect) {
+            score++;
+            questionDiv.style.backgroundColor = '#d4edda'; // Soft green for correct answers
+        } else if (isPartiallyCorrect) {
+            questionDiv.style.backgroundColor = '#fff3cd'; // Soft yellow for partially correct answers
+        } else {
+            questionDiv.style.backgroundColor = '#f8d7da'; // Soft red for incorrect answers
+        }
 
+        // Reveal the correct answer after submission
+        const correctAnswer = document.createElement("p");
         if (item.multi_select) {
-            const correctAnswers = item.correct_options.map(i => item.options[i]).join(", ");
-            correctAnswer.innerHTML = `<strong>Correct Answers:</strong> ${correctAnswers}`;
+            const correctAnswersText = item.correct_options.map(i => item.options[i]).join(", ");
+            correctAnswer.innerHTML = `<strong>Correct Answers:</strong> ${correctAnswersText}`;
         } else {
             correctAnswer.innerHTML = `<strong>Correct Answer:</strong> ${item.options[item.answer]}`;
         }
-
         questionDiv.appendChild(correctAnswer);
     });
 
@@ -186,12 +221,13 @@ function submitQuiz() {
     document.getElementById("modal-total").innerText = quizData.questions.length;
     document.getElementById("score-modal").style.display = "block";
 
-    // Save selections to local storage
-    saveUserSelections();
-
     // Disable submit button after submission
     document.getElementById("submit-btn").disabled = true;
+
+    // Save selections to local storage
+    saveUserSelections();
 }
+
 
 // Function to close the modal
 function closeModal() {
@@ -203,7 +239,7 @@ window.onload = loadQuizData;
 
 // Add randomize button functionality
 const randomizeButton = document.createElement("button");
-randomizeButton.innerText = "Randomize?";
+randomizeButton.innerText = "Randomize";
 randomizeButton.onclick = shuffleQuestions; // Set the button click event
 document.getElementById("quiz-container").insertAdjacentElement("beforebegin", randomizeButton); // Insert the button above the quiz
 
