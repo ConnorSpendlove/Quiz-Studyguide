@@ -50,7 +50,106 @@
             "question": "What is the difference between a client and a server, in networking terms?",
             "correct_answer": "A client requests information or a service, while the server is what responds to the client's request.",
             "type": "short_answer"
+        },
+        {
+            "question": "What does a repeater do?",
+            "correct_answer": "Expands the coverage area of a network by amplifying the signal to devices in the vicinity.",
+            "type":"short_answer"
+        },
+        {
+            "question": "What is a multiport repeater often referred to as?",
+            "correct_answer": "a hub",
+            "type":"short_answer"
+        },
+        {
+            "question": "What is the main difference between a wireless access point and a hub?",
+            "correct_answer": "An access point simply provides a secondary location of the network for devices to connect from, increasing the capacity of the network. A hub sets up a local network to manage the devices on the network. Wireless access points need to have an extra step that hubs don't have. Before a computer can submit data, it needs to send a request to send message (RTS). Wireless access points are wireless, and hubs are wired.",
+            "type":"short_answer"
+        },
+        {
+            "question": "What is the name of the address that is part of a NIC?",
+            "correct_answer": "Media Access Control (MAC)",
+            "type":"short_answer"
+        },
+        {
+            "question": "What is the amount of data that can be transferred on a network during a specific interval called? ",
+            "correct_answer": "bandwidth",
+            "type":"short_answer"
+        },
+        {
+            "question": "How long are MAC addresses?",
+            "correct_answer": "12 hexadecimal characters",
+            "type":"short_answer"
+        },
+        {
+            "question": "To connect to a wireless network, you need to have the ____",
+            "correct_answer": "SSID",
+            "type":"short_answer"
+        },
+        {
+            "question": "What is another name for a port on routers?",
+            "correct_answer": "interface",
+            "type":"short_answer"
+        },
+        {
+            "question": "What tells a router where to send a packet with a destination network that can’t be found in the routing table?",
+            "correct_answer": "default route",
+            "type":"short_answer"
+        },
+        {
+            "question": "The scope of devices to which broadcast frames are forwarded is known as?",
+            "correct_answer": "broadcast domain",
+            "type":"short_answer"
+        },
+        {
+            "question": "What is the difference between physical topology and logical topology?",
+            "correct_answer": "Physical topology is how devices are connected. Logical topology is how the user thinks of them being connected.",
+            "type":"short_answer"
+        },
+        {
+            "question": "How many links would you need in a full mesh configuration if you had 4 nodes?",
+            "correct_answer": "6 wires",
+            "type":"short_answer"
+        },
+        {
+            "question": "What is the name of the most widely used physical topology in networks today?",
+            "correct_answer": "extended star",
+            "type":"short_answer"
+        },
+        {
+            "question": "__________________ is the method a network interface uses to access the medium and send data frames and the structure of these frames.",
+            "correct_answer": "network technology",
+            "type":"short_answer"
+        },
+        {
+            "question": "When using UTP cabling, what is the maximum cable segment allowed from the computer to a hub or switch?",
+            "correct_answer": "100 meters",
+            "type":"short_answer"
+        },
+        {
+            "question": "What is the standard that describes 10 Gigabit running over four pairs of CAT6A cabling?",
+            "correct_answer": "10GBaseT",
+            "type":"short_answer"
+        },
+        {
+            "question": "What is the name of the media access method used by Ethernet?",
+            "correct_answer": "CSMA/CD",
+            "type":"short_answer"
+        },
+        {
+            "question": "What is the networking standard for wireless networking (also known as Wireless Fidelity or Wi-Fi).",
+            "correct_answer": "802.11",
+            "type":"short_answer"
+        },
+        {
+            "question": "Which media access method is used by FDDI?",
+            "correct_answer": "token-passing",
+            "type":"short_answer"
+        },
+        {
+            "question": "__________________ is a broadband technology used to deliver Internet access to homes and businesses over standard cable television (CATV) coaxial cable.",
+            "correct_answer": "cable modem networking",
+            "type":"short_answer"
         }
-        
     ]
 }
