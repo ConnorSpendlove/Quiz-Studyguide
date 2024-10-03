@@ -169,3 +169,14 @@ button:hover {
     background-color: #2b0042;;
     transition: ease 0.2s;
 }
+
+.back-button {
+    padding: 10px 20px 10px 20px;
+    margin-bottom: 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+
