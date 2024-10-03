@@ -93,37 +93,44 @@ function renderQuiz() {
             questionDiv.appendChild(document.createElement("br"));
         });
 
-        // Add "Show Answer" button
-        const showAnswerBtn = document.createElement("button");
-        showAnswerBtn.innerText = "Show Answer";
-        showAnswerBtn.className = "show-answer-btn";
+       // Add "Show Answer" button
+const showAnswerBtn = document.createElement("button");
+showAnswerBtn.innerText = "Show Answer";
+showAnswerBtn.className = "show-answer-btn";
 
-        // Create a paragraph to display the correct answer
-        const correctAnswer = document.createElement("p");
-        correctAnswer.style.display = "none"; // Initially hidden
+// Create a paragraph to display the correct answer
+const correctAnswer = document.createElement("p");
+correctAnswer.style.display = "none"; // Initially hidden
 
-        if (item.multi_select) {
-            const correctAnswersText = item.correct_options.map(i => item.options[i]).join(", ");
-            correctAnswer.innerHTML = `<strong>Correct Answers:</strong> ${correctAnswersText}`;
-        } else {
-            correctAnswer.innerHTML = `<strong>Correct Answer:</strong> ${item.options[item.answer]}`;
-        }
+if (item.multi_select) {
+    const correctAnswersText = item.correct_options.map(i => item.options[i]).join(", ");
+    correctAnswer.innerHTML = `<strong>Correct Answers:</strong> ${correctAnswersText}`;
+} else {
+    correctAnswer.innerHTML = `<strong>Correct Answer:</strong> ${item.options[item.answer]}`;
+}
 
-        // Show correct answer on mousedown, hide on mouseup or mouseleave
-        showAnswerBtn.addEventListener("mousedown", () => {
-            correctAnswer.style.display = "block"; // Show the correct answer
-        });
+// Function to show the correct answer
+function showCorrectAnswer() {
+    correctAnswer.style.display = "block"; // Show the correct answer
+}
 
-        showAnswerBtn.addEventListener("mouseup", () => {
-            correctAnswer.style.display = "none"; // Hide the correct answer
-        });
+// Function to hide the correct answer
+function hideCorrectAnswer() {
+    correctAnswer.style.display = "none"; // Hide the correct answer
+}
 
-        showAnswerBtn.addEventListener("mouseleave", () => {
-            correctAnswer.style.display = "none"; // Hide the correct answer
-        });
+// Desktop: Show correct answer on mousedown, hide on mouseup or mouseleave
+showAnswerBtn.addEventListener("mousedown", showCorrectAnswer);
+showAnswerBtn.addEventListener("mouseup", hideCorrectAnswer);
+showAnswerBtn.addEventListener("mouseleave", hideCorrectAnswer);
 
-        questionDiv.appendChild(showAnswerBtn); // Add the button to the question
-        questionDiv.appendChild(correctAnswer); // Add the correct answer paragraph
+// Mobile: Show correct answer on touchstart, hide on touchend or touchcancel
+showAnswerBtn.addEventListener("touchstart", showCorrectAnswer);
+showAnswerBtn.addEventListener("touchend", hideCorrectAnswer);
+showAnswerBtn.addEventListener("touchcancel", hideCorrectAnswer);
+
+questionDiv.appendChild(showAnswerBtn); // Add the button to the question
+questionDiv.appendChild(correctAnswer); // Add the correct answer paragraph
 
         quizContainer.appendChild(questionDiv); // Add the question to the quiz container
     });
