@@ -52,85 +52,108 @@ function renderQuiz() {
         questionTitle.innerText = `${index + 1}. ${item.question}`;
         questionDiv.appendChild(questionTitle);
 
-        // Create options for each question
-        item.options.forEach((option, i) => {
-            const optionLabel = document.createElement("label");
-            const optionInput = document.createElement("input");
+        // Handle question types
+        if (item.type === "short_answer") {
+            const answerInput = document.createElement("textarea");
+            answerInput.name = `question${index}`;
+            answerInput.className = "short-answer-input";
 
-            if (item.multi_select) {
-                optionInput.type = "checkbox";  // Multi-select uses checkboxes
-            } else {
-                optionInput.type = "radio";     // Single-select uses radio buttons
-                optionInput.name = `question${index}`;  // Group radio buttons by question
-            }
-            optionInput.value = i;
-
-            // Check if the user has previously selected this option
-            if (userSelections[index] && userSelections[index].includes(i)) {
-                optionInput.checked = true; // Pre-check the option
+            // Load previous user input if available
+            if (userSelections[index]) {
+                answerInput.value = userSelections[index];
             }
 
-            // Save user selection in local storage when checked/unchecked
-            optionInput.addEventListener('change', function() {
-                if (item.multi_select) {
-                    if (!userSelections[index]) {
-                        userSelections[index] = [];
-                    }
-                    if (this.checked) {
-                        userSelections[index].push(i);
-                    } else {
-                        userSelections[index] = userSelections[index].filter(option => option !== i);
-                    }
-                } else {
-                    userSelections[index] = [i]; // For single-select, store only the selected option
-                }
-                saveUserSelections(); // Save selections to local storage
+            // Save user input when changed
+            answerInput.addEventListener('input', function() {
+                userSelections[index] = this.value;
+                saveUserSelections(); // Save to local storage
             });
 
-            optionLabel.appendChild(optionInput);
-            optionLabel.append(option);
-            questionDiv.appendChild(optionLabel);
-            questionDiv.appendChild(document.createElement("br"));
-        });
+            questionDiv.appendChild(answerInput); // Append textarea above the "Show Answer" button
+        } else {
+            // Create options for each question
+            item.options.forEach((option, i) => {
+                const optionLabel = document.createElement("label");
+                const optionInput = document.createElement("input");
 
-       // Add "Show Answer" button
-const showAnswerBtn = document.createElement("button");
-showAnswerBtn.innerText = "Show Answer";
-showAnswerBtn.className = "show-answer-btn";
+                if (item.multi_select) {
+                    optionInput.type = "checkbox";  // Multi-select uses checkboxes
+                } else {
+                    optionInput.type = "radio";     // Single-select uses radio buttons
+                    optionInput.name = `question${index}`;  // Group radio buttons by question
+                }
+                optionInput.value = i;
 
-// Create a paragraph to display the correct answer
-const correctAnswer = document.createElement("p");
-correctAnswer.style.display = "none"; // Initially hidden
+                // Check if the user has previously selected this option
+                if (userSelections[index] && userSelections[index].includes(i)) {
+                    optionInput.checked = true; // Pre-check the option
+                }
 
-if (item.multi_select) {
-    const correctAnswersText = item.correct_options.map(i => item.options[i]).join(", ");
-    correctAnswer.innerHTML = `<strong>Correct Answers:</strong> ${correctAnswersText}`;
-} else {
-    correctAnswer.innerHTML = `<strong>Correct Answer:</strong> ${item.options[item.answer]}`;
-}
+                // Save user selection in local storage when checked/unchecked
+                optionInput.addEventListener('change', function() {
+                    if (item.multi_select) {
+                        if (!userSelections[index]) {
+                            userSelections[index] = [];
+                        }
+                        if (this.checked) {
+                            userSelections[index].push(i);
+                        } else {
+                            userSelections[index] = userSelections[index].filter(option => option !== i);
+                        }
+                    } else {
+                        userSelections[index] = [i]; // For single-select, store only the selected option
+                    }
+                    saveUserSelections(); // Save selections to local storage
+                });
 
-// Function to show the correct answer
-function showCorrectAnswer() {
-    correctAnswer.style.display = "block"; // Show the correct answer
-}
+                optionLabel.appendChild(optionInput);
+                optionLabel.append(option);
+                questionDiv.appendChild(optionLabel);
+                questionDiv.appendChild(document.createElement("br"));
+            });
+        }
 
-// Function to hide the correct answer
-function hideCorrectAnswer() {
-    correctAnswer.style.display = "none"; // Hide the correct answer
-}
+        // Add "Show Answer" button
+        const showAnswerBtn = document.createElement("button");
+        showAnswerBtn.innerText = "Show Answer";
+        showAnswerBtn.className = "show-answer-btn";
 
-// Desktop: Show correct answer on mousedown, hide on mouseup or mouseleave
-showAnswerBtn.addEventListener("mousedown", showCorrectAnswer);
-showAnswerBtn.addEventListener("mouseup", hideCorrectAnswer);
-showAnswerBtn.addEventListener("mouseleave", hideCorrectAnswer);
+        // Create a paragraph to display the correct answer
+        const correctAnswer = document.createElement("p");
+        correctAnswer.style.display = "none"; // Initially hidden
 
-// Mobile: Show correct answer on touchstart, hide on touchend or touchcancel
-showAnswerBtn.addEventListener("touchstart", showCorrectAnswer);
-showAnswerBtn.addEventListener("touchend", hideCorrectAnswer);
-showAnswerBtn.addEventListener("touchcancel", hideCorrectAnswer);
+        if (item.multi_select) {
+            const correctAnswersText = item.correct_options.map(i => item.options[i]).join(", ");
+            correctAnswer.innerHTML = `<strong>Correct Answers:</strong> ${correctAnswersText}`;
+        } else if (item.type !== "short_answer") {
+            correctAnswer.innerHTML = `<strong>Correct Answer:</strong> ${item.options[item.answer]}`;
+        } else {
+            // Short answer questions don't need a correct answer displayed here
+            correctAnswer.innerHTML = `<strong>Correct Answer:</strong> ${item.correct_answer}`;
+        }
 
-questionDiv.appendChild(showAnswerBtn); // Add the button to the question
-questionDiv.appendChild(correctAnswer); // Add the correct answer paragraph
+        // Function to show the correct answer
+        function showCorrectAnswer() {
+            correctAnswer.style.display = "block"; // Show the correct answer
+        }
+
+        // Function to hide the correct answer
+        function hideCorrectAnswer() {
+            correctAnswer.style.display = "none"; // Hide the correct answer
+        }
+
+        // Desktop: Show correct answer on mousedown, hide on mouseup or mouseleave
+        showAnswerBtn.addEventListener("mousedown", showCorrectAnswer);
+        showAnswerBtn.addEventListener("mouseup", hideCorrectAnswer);
+        showAnswerBtn.addEventListener("mouseleave", hideCorrectAnswer);
+
+        // Mobile: Show correct answer on touchstart, hide on touchend or touchcancel
+        showAnswerBtn.addEventListener("touchstart", showCorrectAnswer);
+        showAnswerBtn.addEventListener("touchend", hideCorrectAnswer);
+        showAnswerBtn.addEventListener("touchcancel", hideCorrectAnswer);
+
+        questionDiv.appendChild(showAnswerBtn); // Add the button to the question
+        questionDiv.appendChild(correctAnswer); // Add the correct answer paragraph
 
         quizContainer.appendChild(questionDiv); // Add the question to the quiz container
     });
@@ -171,7 +194,25 @@ function submitQuiz() {
         let isCorrect = false;
         let isPartiallyCorrect = false;
 
-        if (item.multi_select) {
+        if (item.type === "short_answer") {
+            // Handle short answer questions
+            const answerInput = document.querySelector(`textarea[name="question${index}"]`);
+            const userAnswer = answerInput ? answerInput.value.trim() : "";
+
+            // Show the correct answer for short answer questions
+            const correctAnswer = document.createElement("p");
+            correctAnswer.innerHTML = `<strong>Correct Answer:</strong> ${item.correct_answer}`;
+            questionDiv.appendChild(correctAnswer);
+
+            // Compare the user's answer to the correct answer for scoring
+            if (userAnswer === item.correct_answer) {
+                isCorrect = true;
+            }
+
+            // No color change for short answer questions
+            questionDiv.style.backgroundColor = ''; // No color change
+
+        } else if (item.multi_select) {
             // Handle multi-select (checkbox) questions
             const selectedOptions = Array.from(document.querySelectorAll(`.question:nth-child(${index + 1}) input[type="checkbox"]:checked`)).map(option => parseInt(option.value));
             const correctAnswers = item.correct_options;
@@ -189,6 +230,12 @@ function submitQuiz() {
                 isPartiallyCorrect = true;
             }
 
+            // Show the correct answers for multi-select questions
+            const correctAnswer = document.createElement("p");
+            const correctAnswersText = correctAnswers.map(i => item.options[i]).join(", ");
+            correctAnswer.innerHTML = `<strong>Correct Answers:</strong> ${correctAnswersText}`;
+            questionDiv.appendChild(correctAnswer);
+
         } else {
             // Handle single-select (radio) questions
             const selectedOption = document.querySelector(`input[name="question${index}"]:checked`);
@@ -196,72 +243,45 @@ function submitQuiz() {
             if (selectedOption && parseInt(selectedOption.value) === item.answer) {
                 isCorrect = true;
             }
-        }
 
-        // Mark the question as correct, partially correct, or incorrect
-        if (isCorrect) {
-            score++;
-            questionDiv.style.backgroundColor = '#d4edda'; // Soft green for correct answers
-        } else if (isPartiallyCorrect) {
-            questionDiv.style.backgroundColor = '#fff3cd'; // Soft yellow for partially correct answers
-        } else {
-            questionDiv.style.backgroundColor = '#f8d7da'; // Soft red for incorrect answers
-        }
-
-        // Reveal the correct answer after submission
-        const correctAnswer = document.createElement("p");
-        if (item.multi_select) {
-            const correctAnswersText = item.correct_options.map(i => item.options[i]).join(", ");
-            correctAnswer.innerHTML = `<strong>Correct Answers:</strong> ${correctAnswersText}`;
-        } else {
+            // Show the correct answer for single-select questions
+            const correctAnswer = document.createElement("p");
             correctAnswer.innerHTML = `<strong>Correct Answer:</strong> ${item.options[item.answer]}`;
+            questionDiv.appendChild(correctAnswer);
         }
-        questionDiv.appendChild(correctAnswer);
+
+        // Mark the question's background color based on correctness, only for non-short answer questions
+        if (item.type !== "short_answer") {
+            if (isCorrect) {
+                questionDiv.style.backgroundColor = '#d4edda'; // Soft green for correct
+                score++;
+            } else if (isPartiallyCorrect) {
+                questionDiv.style.backgroundColor = '#ffeeba'; // Soft yellow for partially correct
+            } else {
+                questionDiv.style.backgroundColor = '#f8d7da'; // Soft red for incorrect
+            }
+        }
+
+        // Hide the "Show Answer" button after submission
+        const showAnswerBtn = questionDiv.querySelector(".show-answer-btn");
+        if (showAnswerBtn) {
+            showAnswerBtn.style.display = 'none';
+        }
     });
 
-    // Update score display at the top
+    // Calculate total questions excluding short answer for score
+    const totalQuestions = quizData.questions.filter(q => q.type !== "short_answer").length;
+
+    // Display score and total questions
     document.getElementById("score-value").innerText = score;
-    document.getElementById("total-questions").innerText = quizData.questions.length;
+    document.getElementById("total-questions").innerText = totalQuestions;
 
-    // Update and show modal with score
-    document.getElementById("modal-score-value").innerText = score;
-    document.getElementById("modal-total").innerText = quizData.questions.length;
-    document.getElementById("score-modal").style.display = "block";
+    resultDiv.innerHTML = `You scored ${score} out of ${totalQuestions}.`;
 
-    // Disable submit button after submission
+    // Disable the submit button after submitting
     document.getElementById("submit-btn").disabled = true;
-
-    // Save selections to local storage
-    saveUserSelections();
 }
 
 
-// Function to close the modal
-function closeModal() {
-    document.getElementById("score-modal").style.display = "none";
-}
-
-// Initialize the quiz on page load
+// Call the load function on window load
 window.onload = loadQuizData;
-
-// Add randomize button functionality
-const randomizeButton = document.createElement("button");
-randomizeButton.innerText = "Randomize";
-randomizeButton.onclick = shuffleQuestions; // Set the button click event
-document.getElementById("quiz-container").insertAdjacentElement("beforebegin", randomizeButton); // Insert the button above the quiz
-
-// Function to scroll to the top of the page
-function scrollToTop() {
-    window.scrollTo({ top: 0, behavior: 'smooth' });
-}
-
-// Show or hide the "Back to Top" button based on scroll position
-window.onscroll = function() {
-    const backToTopButton = document.getElementById('back-to-top');
-    if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
-        backToTopButton.classList.add('show');
-    } else {
-        backToTopButton.classList.remove('show');
-    }
-};
-

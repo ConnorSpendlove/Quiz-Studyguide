@@ -1,0 +1,56 @@
+{
+    "title": "CYBR-2500-Midterm Short Answer",
+    "questions": [
+        {
+            "question": "Name the three basic tasks all computers perform?",
+            "correct_answer": "input, processing, output",
+            "type": "short_answer"
+        },
+        {
+            "question": "What is the physical address assigned to NICs called?",
+            "correct_answer": "MAC address",
+            "type": "short_answer"
+        },
+        {
+            "question": "What is the more well-known term for chunks of data sent across the network?",
+            "correct_answer": "packets",
+            "type": "short_answer"
+        },
+        {
+            "question": "What is the name given to software that provides the interface between the OS and computer hardware?",
+            "correct_answer": "device driver",
+            "type": "short_answer"
+        },
+        {
+            "question": "What is the name of the network service that provides name resolution services that allow users to access both local and Internet servers by name rather than address?",
+            "correct_answer": "DNS server",
+            "type": "short_answer"
+        },
+        {
+            "question": "Which component provides a number of critical services, including a user interface, memory management, a file system, multitasking, and the interface to hardware devices?",
+            "correct_answer": "operating system",
+            "type": "short_answer"
+        },
+        {
+            "question": "Is Random Access Memory (RAM) short-term or long-term storage?",
+            "correct_answer": "short-term",
+            "type": "short_answer"
+        },
+        {
+            "question": "What term is used to describe a networked collection of LANs tied together by devices such as routers?",
+            "correct_answer": "internetwork",
+            "type": "short_answer"
+        },
+        {
+            "question": "The client/server networking model may also be known as?",
+            "correct_answer": "server-based",
+            "type": "short_answer"
+        },
+        {
+            "question": "What is the difference between a client and a server, in networking terms?",
+            "correct_answer": "A client requests information or a service, while the server is what responds to the client's request.",
+            "type": "short_answer"
+        }
+        
+    ]
+}
