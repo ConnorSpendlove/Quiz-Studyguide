@@ -150,6 +150,106 @@
             "question": "__________________ is a broadband technology used to deliver Internet access to homes and businesses over standard cable television (CATV) coaxial cable.",
             "correct_answer": "cable modem networking",
             "type":"short_answer"
+        },
+        {
+            "question": "What is the process called that determines how bits are represented on the medium?",
+            "correct_answer": "encoding",
+            "type":"short_answer"
+        },
+        {
+            "question": "What are the two types of interference often encountered when using copper media?",
+            "correct_answer": "Electromagnetic Interference (EMI) and Radio Frequency Interference (RFI)",
+            "type":"short_answer"
+        },
+        {
+            "question": "What is a short cable for connecting a computer to an RJ-45 jack or connecting a patch-panel port to a switch or hub?",
+            "correct_answer": "patch cable",
+            "type":"short_answer"
+        },
+        {
+            "question": "Which category of UTP is the recommended cabling standard for 1 Gbps over copper media?",
+            "correct_answer": "CAT6",
+            "type":"short_answer"
+        },
+        {
+            "question": "Horizontal wiring from the wall jack to the patch panel should be no longer than?",
+            "correct_answer": "90 meters",
+            "type":"short_answer"
+        },
+        {
+            "question": "What is the name of the device that is used to translate between wired and wireless networks?",
+            "correct_answer": "Transceiver/access point",
+            "type":"short_answer"
+        },
+        {
+            "question": "Name the two main types of fiber-optic cable.",
+            "correct_answer": "Single-mode fiber (SMF) and Multimode fiber (MMF)",
+            "type":"short_answer"
+        },
+        {
+            "question": "Which fiber-optic media type uses light-emitting diodes (LEDs) instead of lasers?",
+            "correct_answer": "Multimode Fiber (MMF)",
+            "type":"short_answer"
+        },
+        {
+            "question": "What can connect networks up to three miles?",
+            "correct_answer": "Wireless bridges",
+            "type":"short_answer"
+        },
+        {
+            "question": "What type of system can send and receive data from geosynchronous satellites that maintain fixed positions in the sky?",
+            "correct_answer": "Satellite Microwave systems",
+            "type":"short_answer"
+        },
+        {
+            "question": "When a set of protocols works together cooperatively it is known as a?",
+            "correct_answer": "protocol stack",
+            "type":"short_answer"
+        },
+        {
+            "question": "At what layer of the TCP/IP suite are IP addresses defined and verified?",
+            "correct_answer": "internetwork",
+            "type":"short_answer"
+        },
+        {
+            "question": "TCP and UDP use __________________ to specify the source and destination application-layer protocols.",
+            "correct_answer": "transport layers",
+            "type":"short_answer"
+        },
+        {
+            "question": "Which Transport-layer protocol does DHCP use?",
+            "correct_answer": "UDP (User Datagram Protocol)",
+            "type":"short_answer"
+        },
+        {
+            "question": "What port is associated with the DNS service?",
+            "correct_answer": "53",
+            "type":"short_answer"
+        },
+        {
+            "question": "What type of protocol is used when no lasting connection is made from source to destination?",
+            "correct_answer": "connectionless",
+            "type":"short_answer"
+        },
+        {
+            "question": "Which of the five IP address class ranges are available for host assignment?",
+            "correct_answer": "There are three - class A, class B, and class C.",
+            "type":"short_answer"
+        },
+        {
+            "question": "What allows an organization to use private IP addresses while connected to the Internet.",
+            "correct_answer": "NAT (Network Address Translation)",
+            "type":"short_answer"
+        },
+        {
+            "question": "What is the name of the process of dividing a single network address into two or more subnetwork addresses, each with fewer available host IDs than the original network address?",
+            "correct_answer": "subnetting",
+            "type":"short_answer"
+        },
+        {
+            "question": "How many bits is an IPv6 address rather than the 32 bits in an IPv4 address.",
+            "correct_answer": "128 bits",
+            "type":"short_answer"
         }
     ]
 }
