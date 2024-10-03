@@ -250,6 +250,101 @@
             "question": "How many bits is an IPv6 address rather than the 32 bits in an IPv4 address.",
             "correct_answer": "128 bits",
             "type":"short_answer"
+        },
+        {
+            "question": "The IP address 127.0.0.1 is a reserved address because it used for troubleshooting and is known as what?",
+            "correct_answer": "Localhost",
+            "type":"short_answer"
+        },
+        {
+            "question": "A range of addresses is reserved for private addressing in each class. What are those ranges and classes?",
+            "correct_answer": "The ranges include 10.0.0.0, 90.0.0.0, 172.16.0.0 to 172.31.0.0, and 192.168.0.0.",
+            "type":"short_answer"
+        },
+        {
+            "question": "What is the name of the process of dividing a single network address into two or more subnetwork addresses, each with fewer available host IDs than the original network address?",
+            "correct_answer": "subnetting",
+            "type":"short_answer"
+        },
+        {
+            "question": "What is the difference between NAT and PAT?",
+            "correct_answer": "Both turn private IP addresses into public IP addresses. NAT does this by turning local addresses to global addresses, while PAT does this by translating unregistered IP addresses to registered public IP addresses.",
+            "type":"short_answer"
+        },
+        {
+            "question": "How many bits are in an IPv6 address?",
+            "correct_answer": "128",
+            "type":"short_answer"
+        },
+        {
+            "question": "List and describe three improvements that IPv6 has over IPv4.",
+            "correct_answer": "IPv6 is more secure. IPv6 processes packets more efficiently. IPv6 has 128 bit IP addresses, which means there are more IP addresses overall when dealing with IPv6 as opposed to IPv4's 32 bit IP addresses.",
+            "type":"short_answer"
+        },
+        {
+            "question": "How does a computer know when to send packets to the default gateway?",
+            "correct_answer": "Computers determine the network ID by doing a logical AND operation between its IP address and subnet mask.",
+            "type":"short_answer"
+        },
+        {
+            "question": "Which command displays the route packets take between two computers?",
+            "correct_answer": "traceroute command",
+            "type":"short_answer"
+        },
+        {
+            "question": "If all hosts on the same network have different network ID, can they talk?",
+            "correct_answer": "No",
+            "type":"short_answer"
+        },
+        {
+            "question": "Why has the OSI Reference Model become such a key part of networking?",
+            "correct_answer": "Because it is a common model for students to learn with.",
+            "type":"short_answer"
+        },
+        {
+            "question": "What is meant by peer communication between layers?",
+            "correct_answer": "Two computers can communicate across a network.",
+            "type":"short_answer"
+        },
+        {
+            "question": "Which layer permits two computers to hold ongoing communications across a network, so applications on either end of the session can exchange data for as long as the session lasts?",
+            "correct_answer": "session layer",
+            "type":"short_answer"
+        },
+        {
+            "question": "What PDU is in use at the Transport layer of the OSI model?",
+            "correct_answer": "segment based",
+            "type":"short_answer"
+        },
+        {
+            "question": "In the IEEE 802 standards, each number after the dot represents a different _______________________.",
+            "correct_answer": "technology",
+            "type":"short_answer"
+        },
+        {
+            "question": "The segmenting of the data is important because every network technology has a maximum frame size called the ____________________________________.",
+            "correct_answer": "Maximum Transmission Unit",
+            "type":"short_answer"
+        },
+        {
+            "question": "Why did the IEEE feel the need to develop LAN standards?",
+            "correct_answer": "To make sure network interfaces would be compatible with each other.",
+            "type":"short_answer"
+        },
+        {
+            "question": "What are the names of the two sublayers of the data link layer?",
+            "correct_answer": "LLC, MAC",
+            "type":"short_answer"
+        },
+        {
+            "question": "Which sublayer defines the use of logical interface points, called Service Access Points (SAPs)?",
+            "correct_answer": "LLC",
+            "type":"short_answer"
+        },
+        {
+            "question": "Which 802 standard describes Token Ring?",
+            "correct_answer": "IEEE 802.5",
+            "type":"short_answer"
         }
     ]
 }
