@@ -81,8 +81,8 @@ ul li a:hover {
 
 #back-to-top {
     position: fixed; /* Change to fixed for proper scrolling behavior */
-    top: 20px; /* Position 20px from the bottom */
-    left: 20px; /* Position 20px from the right */
+    top: 20px; 
+    left: 20px; 
     display: none; /* Initially hidden */
     background: #72a1e5;
     color: #fcf7ff;
@@ -92,6 +92,22 @@ ul li a:hover {
     font-size: 14px; /* Adjusted font size */
     cursor: pointer;
     z-index: 1000;
+}
+@media(max-width: 700px){
+    #back-to-top{
+        /* top: 30px; */
+        right: 20px;
+        left: 459px;
+        top:40px;
+    }
+}
+@media(max-width: 576px){
+    #back-to-top{
+        /* top: 30px; */
+        right: 20px;
+        left: 280px;
+        top:40px;
+    }
 }
 
 #back-to-top:hover {
@@ -222,26 +238,24 @@ footer p {
 }
 
 footer a {
-    color: #72a1e5;
-    text-decoration: none;
+    color: #fcf7ff;
     font-weight: bold;
 }
 
 footer a:hover {
     text-decoration: underline;
 }
+@media (max-width: 600px) {
+    footer h3 {
+        font-size: 15px;
+    }
 
-footer dt, dd {
-    font-size: 10px;
-    margin: 6px 0;
-    color: #fcf7ff;
-    font-family: 'Arial', sans-serif;
-    font-style: italic;
-}
-
-footer dt span {
-    color: #fcf7ff;
-    font-weight: bold;
+    footer p {
+        font-size: 12px;
+    }
+    footer a {
+        font-size: 12px;
+    }
 }
 
 #cybr-quiz {
@@ -264,6 +278,7 @@ body.dark-mode .container {
     background-color: #1e1b43; /* Dark mode container background */
     color: #fcf7ff; /* Dark mode container text color */
 }
+
 
 body.dark-mode ul li a {
     color: #72a1e5; /* Dark mode link color */
@@ -325,12 +340,6 @@ body.dark-mode #back-to-top {
     background-color: #f8d7da; /* Soft red for incorrect */
 }
 
-/* Style for the toggle switch */
-label {
-    display: flex;
-    align-items: center;
-}
-
 /* Style for the input switch to hide the default checkbox */
 input[type="checkbox"] {
     display: none; /* Hide the default checkbox */
@@ -341,23 +350,19 @@ span {
     cursor: pointer; /* Change cursor to pointer for the slider */
 }
 
-/* Additional styles for dark mode switch */
-.dark-mode span {
-    background-color: #14110f; /* Color of the slider when dark mode is enabled */
+label {
+    display: flex;
+    align-items: center;
+    color: #fcf7ff; /* Light mode text color */
+    font-weight: bold;
 }
 
-
-/* Responsive Adjustments */
-@media (max-width: 600px) {
-    footer {
-        padding: 15px;
+/* Media Query */
+@media (max-width: 800px) {
+    label {
+        color: #14110f; 
     }
-
-    footer h3 {
-        font-size: 18px;
-    }
-
-    footer p {
-        font-size: 14px;
+    .dark-mode label {
+        color: #fcf7ff; 
     }
 }

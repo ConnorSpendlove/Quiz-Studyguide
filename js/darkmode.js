@@ -38,7 +38,6 @@ const createDarkModeToggle = () => {
     // Create text for the label
     const darkModeText = document.createElement('span');
     darkModeText.innerText = 'Dark Mode';
-    darkModeText.style.color = '#fcf7ff'; // Light text color
     darkModeText.style.marginLeft = '10px'; // Add space between the switch and text
 
     // Check local storage for dark mode preference
