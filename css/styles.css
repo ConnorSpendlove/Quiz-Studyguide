@@ -340,17 +340,12 @@ body.dark-mode #back-to-top {
     background-color: #f8d7da; /* Soft red for incorrect */
 }
 
-/* Style for the input switch to hide the default checkbox */
-input[type="checkbox"] {
-    display: none; /* Hide the default checkbox */
-}
-
 /* Style for the slider */
 span {
     cursor: pointer; /* Change cursor to pointer for the slider */
 }
 
-label {
+#toggle-label {
     display: flex;
     align-items: center;
     color: #fcf7ff; /* Light mode text color */
@@ -359,10 +354,11 @@ label {
 
 /* Media Query */
 @media (max-width: 800px) {
-    label {
+    #toggle-label {
         color: #14110f; 
     }
-    .dark-mode label {
+    .dark-mode #toggle-label {
         color: #fcf7ff; 
     }
 }
+
