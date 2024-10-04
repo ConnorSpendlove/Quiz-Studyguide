@@ -14,31 +14,31 @@
         <p>Select a quiz:</p>
         <ul>
             <li>
-                <a href="../quiz.html?quizUrl=../quizzes/CYBR-2500-midterm-multiple-choice.json">CYBR-2500-Midterm Multiple Choice</a>
+                <a href="../quiz.html?quizUrl=../quizzes/CYBR-2500-midterm-multiple-choice.json" id="cybr-quiz">CYBR-2500-Midterm Multiple Choice</a>
                 <p style="font-size: small; font-style: italic; margin: 0;">*I did my best to find every question in the pool, it is likely I missed a few*</p>
             </li>
             <li>
-                <a href="../quiz.html?quizUrl=../quizzes/CYBR-2500-midterm-short-answer.json">CYBR-2500-Midterm Short Answer</a>
+                <a href="../quiz.html?quizUrl=../quizzes/CYBR-2500-midterm-short-answer.json" id="cybr-quiz">CYBR-2500-Midterm Short Answer</a>
                 <p style="font-size: small; font-style: italic; margin: 0;">*There is no scoring for this quiz*</p>
             </li>
             <!-- Add more quizzes here -->
         </ul>
     </div>
-    <footer>
+    <footer id = "footer">
         <div class="footer-content">
             <h3>Contact</h3>
             <p>Contact me here for suggestions, concerns, or bug fixes:</p>
             <a href="mailto:connor.spendlove44@gmail.com">connor.spendlove44@gmail.com</a>
         </div>
-
     </footer>
-   
+    <script src="../js/darkmode.js"></script>
 
     <script>
         // Add event listener for the "Back" button
         document.getElementById("back-button").addEventListener("click", () => {
             window.history.back(); // Go back to the previous page
         });
+
     </script>
 
 </body>

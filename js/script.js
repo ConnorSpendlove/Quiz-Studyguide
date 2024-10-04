@@ -159,7 +159,6 @@ function renderQuiz() {
     });
 }
 
-
 // Save user selections to local storage
 function saveUserSelections() {
     localStorage.setItem('userSelections', JSON.stringify(userSelections));
@@ -210,7 +209,7 @@ function submitQuiz() {
             }
 
             // No color change for short answer questions
-            questionDiv.style.backgroundColor = ''; // No color change
+            questionDiv.classList.remove('correct', 'partially-correct', 'incorrect'); // Remove all classes
 
         } else if (item.multi_select) {
             // Handle multi-select (checkbox) questions
@@ -253,12 +252,12 @@ function submitQuiz() {
         // Mark the question's background color based on correctness, only for non-short answer questions
         if (item.type !== "short_answer") {
             if (isCorrect) {
-                questionDiv.style.backgroundColor = '#d4edda'; // Soft green for correct
+                questionDiv.classList.add('correct'); // Add correct class
                 score++;
             } else if (isPartiallyCorrect) {
-                questionDiv.style.backgroundColor = '#ffeeba'; // Soft yellow for partially correct
+                questionDiv.classList.add('partially-correct'); // Add partially correct class
             } else {
-                questionDiv.style.backgroundColor = '#f8d7da'; // Soft red for incorrect
+                questionDiv.classList.add('incorrect'); // Add incorrect class
             }
         }
 
@@ -282,6 +281,31 @@ function submitQuiz() {
     document.getElementById("submit-btn").disabled = true;
 }
 
+// Toggle dark mode function
+const toggleDarkMode = () => {
+    document.body.classList.toggle('dark-mode');
+    const questions = document.querySelectorAll('.question');
+    questions.forEach(question => {
+        // Check the current class and apply the appropriate color class based on correctness
+        if (question.classList.contains('correct')) {
+            question.classList.toggle('correct'); // Remove correct class
+            question.classList.add('correct'); // Re-add to ensure it takes the right color
+        } else if (question.classList.contains('partially-correct')) {
+            question.classList.toggle('partially-correct'); // Remove partially correct class
+            question.classList.add('partially-correct'); // Re-add to ensure it takes the right color
+        } else if (question.classList.contains('incorrect')) {
+            question.classList.toggle('incorrect'); // Remove incorrect class
+            question.classList.add('incorrect'); // Re-add to ensure it takes the right color
+        }
+    });
+};
 
 // Call the load function on window load
 window.onload = loadQuizData;
+
+
+// Attach event listener to reset button
+document.getElementById("reset-btn").onclick = resetQuiz;
+
+// Attach event listener to submit button
+document.getElementById("submit-btn").onclick = submitQuiz;
