@@ -253,12 +253,12 @@
         },
         {
             "question": "The IP address 127.0.0.1 is a reserved address because it used for troubleshooting and is known as what?",
-            "correct_answer": "Localhost",
+            "correct_answer": "a loopack address",
             "type":"short_answer"
         },
         {
             "question": "A range of addresses is reserved for private addressing in each class. What are those ranges and classes?",
-            "correct_answer": "The ranges include 10.0.0.0, 90.0.0.0, 172.16.0.0 to 172.31.0.0, and 192.168.0.0.",
+            "correct_answer": "The ranges include Class A 10.0.0.0 and 90.0.0.0, Class B 172.16.0.0 to 172.31.0.0, and Class C 192.168.0.0.",
             "type":"short_answer"
         },
         {
