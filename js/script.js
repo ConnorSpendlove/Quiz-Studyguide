@@ -309,3 +309,6 @@ document.getElementById("reset-btn").onclick = resetQuiz;
 
 // Attach event listener to submit button
 document.getElementById("submit-btn").onclick = submitQuiz;
+
+const randomizeBtn = document.getElementById("randomize-btn");
+randomizeBtn.onclick = shuffleQuestions;
