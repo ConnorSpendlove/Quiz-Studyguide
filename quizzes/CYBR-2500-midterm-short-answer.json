@@ -213,7 +213,7 @@
         },
         {
             "question": "TCP and UDP use __________________ to specify the source and destination application-layer protocols.",
-            "correct_answer": "transport layers",
+            "correct_answer": "port numbers",
             "type":"short_answer"
         },
         {
