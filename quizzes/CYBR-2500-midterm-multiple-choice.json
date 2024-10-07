@@ -394,30 +394,12 @@
             "answer": 0
           },
           {
-            "question": "A collision can occur on a switch only if the switch is operating in full-duplex mode.",
-            "options": [
-              "True",
-              "False"
-            ],
-            "answer": 1
-          },
-          {
             "question": "In a physical bus topology, both ends of the medium must be terminated in order to prevent what?",
             "options": [
               "signal propagation",
               "collision",
               "signal bounce",
               "signal degradation"
-            ],
-            "answer": 2
-          },
-          {
-            "question": "Which of the following is true about collisions?",
-            "options": [
-              "Fewer computers means more collisions.",
-              "They are a problem with Token Ring networks.",
-              "They can occur on Ethernet half-duplex networks.",
-              "They can only happen with switches."
             ],
             "answer": 2
           },
