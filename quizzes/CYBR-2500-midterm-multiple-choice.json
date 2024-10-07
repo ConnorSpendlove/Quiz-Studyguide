@@ -394,16 +394,6 @@
             "answer": 0
           },
           {
-            "question": "Which of the following is NOT a characteristic of Unshielded Twisted Pair cabling?",
-            "options": [
-              "maximum speed is 100 Mbps",
-              "susceptible to electrical interference",
-              "comes in numbered categories",
-              "contains four pairs of copper wire"
-            ],
-            "answer": 0
-          },
-          {
             "question": "In wireless networks, what type of media access control is used?",
             "options": [
               "Polling",
