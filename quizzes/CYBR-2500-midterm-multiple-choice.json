@@ -454,16 +454,6 @@
             "answer": 1
           },
           {
-            "question": "In a token ring network, what is the central device called?",
-            "options": [
-              "multistation access unit",
-              "multiservice switch",
-              "multiport Ethernet switch",
-              "multisession drive"
-            ],
-            "answer": 0
-          },
-          {
             "question": "What is a disadvantage of using fiber-optic cabling versus twisted-pair cabling?",
             "options": [
               "more expensive terminations",
