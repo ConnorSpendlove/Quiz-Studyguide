@@ -394,16 +394,6 @@
             "answer": 0
           },
           {
-            "question": "In a physical bus topology, both ends of the medium must be terminated in order to prevent what?",
-            "options": [
-              "signal propagation",
-              "collision",
-              "signal bounce",
-              "signal degradation"
-            ],
-            "answer": 2
-          },
-          {
             "question": "Which of the following is NOT a characteristic of Unshielded Twisted Pair cabling?",
             "options": [
               "maximum speed is 100 Mbps",
