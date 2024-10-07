@@ -404,16 +404,6 @@
             "answer": 2
           },
           {
-            "question": "Which of the following is the physical topology that is daisy-chained like a bus where the cabling is brought around from the last device to the first device?",
-            "options": [
-              "physical ring",
-              "physical bus",
-              "physical star",
-              "point-to-point"
-            ],
-            "answer": 0
-          },
-          {
             "question": "Which of the following is NOT a characteristic of Unshielded Twisted Pair cabling?",
             "options": [
               "maximum speed is 100 Mbps",
