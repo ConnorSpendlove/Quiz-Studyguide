@@ -664,7 +664,7 @@
               "True",
               "False"
             ],
-            "answer": 0
+            "answer": 1
           },
           {
             "question": "What are you likely to find in a DNS zone?",
