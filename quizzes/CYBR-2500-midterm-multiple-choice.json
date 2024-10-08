@@ -334,11 +334,6 @@
         "answer": 0
     },
     {
-        "question": "In wireless networks, what type of media access control is used?",
-        "options": ["Polling","CSMA/CD","CSMA/CA","Token passing"],
-        "answer": 1
-    },
-    {
         "question": "Which of the following is NOT an advantage of a physical star?",
         "options": ["use of faster technologies","easier network upgrades","centralized monitoring and management of traffic","single point of failure"],
         "answer": 3
