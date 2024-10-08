@@ -455,7 +455,7 @@
               "antenna",
               "patch panel"
             ],
-            "correct_options": [1, 2, 3, 4],
+            "correct_options": [1, 2, 3],
             "multi_select": true
           },
           {
