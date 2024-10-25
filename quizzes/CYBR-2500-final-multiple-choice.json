@@ -1,0 +1,135 @@
+{
+    "title": "CYBR-2500-Final Multiple Choice",
+    "questions": [
+        
+            {
+                "question": "Which switching method reads a minimum of 64 bytes of an Ethernet frame before forwarding the frame?",
+                "options": ["fragment-free", "auto-negotiate", "store-and-forward", "cut-through"],
+                "answer": 0
+            },
+            {
+                "question": "When a router's interface is configured to connect with a switch trunk port to route packets between VLANs, what is this called?",
+                "options": ["multi-homed router", "link-state router", "dynamic router", "router on a stick"],
+                "answer": 3
+            },
+            {
+                "question": "More VLANs mean fewer logical networks, so the network is less complex.",
+                "options": ["True", "False"],
+                "answer": 1
+            },
+            {
+                "question": "Your colleagues are discussing the operation of a device in which packets are routed between VLANs on the device rather than having to exit the device to be routed. What type of device are they most likely discussing?",
+                "options": ["managed switch", "access point", "router", "Layer 3 switch"],
+                "answer": 3
+            },
+            {
+                "question": "What command issued from a command prompt will display the routing table in Windows?",
+                "options": ["route print", "route table", "route config", "route delete"],
+                "answer": 0
+            },
+            {
+                "question": "Which of the following combinations will you find in a switching table?",
+                "options": ["application/destination port number", "destination network/next Hop", "MAC address/switch port number", "IP address/exit interface"],
+                "answer": 2
+            },
+            {
+                "question": "All network switches require substantial configuration before they can be put into operation in a network.",
+                "options": ["True", "False"],
+                "answer": 1
+            },
+            {
+                "question": "You have four switches, A, B, C, and D. Switch A is connected to Switch C and Switch B is connected to Switch D. Furthermore, Switch A and B are connected and Switch C and D are connected. One of the connections is in blocking mode. What protocol must be running on the switches?",
+                "options": ["SNMP", "NTP", "STP", "RIP"],
+                "answer": 2
+            },
+            {
+                "question": "Which of the following would be found in a router's routing table? (Choose all that apply.)",
+                "options": ["MAC address", "next hop", "destination network", "metric", "timestamp"],
+                "correct_options": [1, 2, 3, 4],
+                "multi_select": true
+            },
+            {
+                "question": "In which type of routing protocol is a router's routing table copied to neighboring routers to share internetwork information?",
+                "options": ["hybrid protocol", "link-state protocol", "distance-vector protocol", "distance-state protocol"],
+                "answer": 2
+            },
+            {
+                "question": "A distance-vector protocol sends updates to its neighbors that include the contents of its routing table.",
+                "options": ["True", "False"],
+                "answer": 0
+            },
+            {
+                "question": "Which of the following is NOT a function that would be found in a managed switch?",
+                "options": ["the ability to transfer its switching table with neighboring switches", "to limit access to the network by enabling security on individual ports", "the creation of VLANS to logically separate resources", "the ability to stop switching loops using STP"],
+                "answer": 0
+            },
+            {
+                "question": "In general, what level of security should you use with your access points?",
+                "options": ["wireless encryption protocol", "the most secure your systems supports", "RADIUS", "the easiest to configure"],
+                "answer": 1
+            },
+            {
+                "question": "What category of routing protocol is used to route packets between autonomous systems?",
+                "options": ["IGP", "distance-vector", "EGP", "link-state"],
+                "answer": 2
+            },
+            {
+                "question": "Routers can be used to control network access by inspecting the source and destination address information of packets.",
+                "options": ["True", "False"],
+                "answer": 0
+            },
+            {
+                "question": "What has occurred when all routers in a network have accurate information after a change in the network?",
+                "options": ["delivery", "congestion", "convergence", "concurrence"],
+                "answer": 2
+            },
+            {
+                "question": "What is the name of the value assigned to a routing protocol to indicate its reliability compared with other routing protocols that might be in use on the same router?",
+                "options": ["ACL", "hop count", "administrative distance", "metric"],
+                "answer": 2
+            },
+            {
+                "question": "What type of hacker uses a scanning device to find unsecured wireless networks and breaks into those networks?",
+                "options": ["wardriver", "white hat", "phisher", "script kiddy"],
+                "answer": 0
+            },
+            {
+                "question": "Which advanced feature of a NIC allows a computer to download an OS from the network instead of from a local drive?",
+                "options": ["shared system memory", "onboard coprocessor", "advanced configuration power management interface", "preboot execution environment"],
+                "answer": 3
+            },
+            {
+                "question": "Which of the following is a common link-state routing protocol?",
+                "options": ["OSPF", "RIPv2", "BGP", "EIGRP"],
+                "answer": 0
+            },
+            {
+                "question": "Access control lists can be configured based on which of the following? (Choose all that apply.)",
+                "options": ["destination MAC address", "protocol", "source MAC address", "TCP port", "source IP address"],
+                "correct_options": [1, 3, 4],
+                "multi_select": true
+            },
+            {
+                "question": "Changing the SSID on the access point and disabling SSID broadcast is sufficient security for most wireless networks.",
+                "options": ["True", "False"],
+                "answer": 1
+            },
+            {
+                "question": "Which of the following is the fastest switching mode?",
+                "options": ["store-and-forward", "fragment-free", "cut-through", "auto-negotiate"],
+                "answer": 2
+            },
+            {
+                "question": "Which of the following is NOT a true statement regarding the function of a switch?",
+                "options": ["It sends broadcast frames out all connected ports except the port where the frame was received.", "Each port on a switch represents a separate collision domain.", "Switches have the ability to operate in full-duplex mode.", "It determines the path used based on the destination IP address."],
+                "answer": 3
+            },
+            {
+                "question": "On a router configured to use RIP, the number of routers a packet must travel through before it reaches its destination is called what? (Choose two.)",
+                "options": ["hop count", "aging time", "metric", "timestamp"],
+                "correct_options": [0, 2],
+                "multi_select": true
+            }
+
+    ]
+}
