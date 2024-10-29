@@ -2,8 +2,53 @@
     "title": "CYBR-2500-Final Short Answer",
     "questions": [
         {
-            "question": "Test",
-            "correct_answer": "input, processing, output",
+            "question": "At what layer of the OSI model do switches operate?",
+            "correct_answer": "Layer 2",
+            "type": "short_answer"
+        },
+        {
+            "question": "When a switch attempts to set a port’s operating mode to the highest performance setting, the connecting device that supports it is called?",
+            "correct_answer": "Auto-negotiate mode",
+            "type": "short_answer"
+        },
+        {
+            "question": "The total number of routers a packet must travel through is called?",
+            "correct_answer": "Hop count",
+            "type": "short_answer"
+        },
+        {
+            "question": "Switches that support ________________________ enable you to configure one or more switch ports into separate broadcast domains.",
+            "correct_answer": "Virtual local area networks (VLANs)",
+            "type": "short_answer"
+        },
+        {
+            "question": "The process of moving a packet from the incoming interface to the outgoing interface is called?",
+            "correct_answer": "Packet Forwarding",
+            "type": "short_answer"
+        },
+        {
+            "question": "Which type of routing protocol shares information with other routers by sending the status of all their interface links to other routers in the internetwork?",
+            "correct_answer": "Link-state protocols",
+            "type": "short_answer"
+        },
+        {
+            "question": "What is a set of rules configured on a router’s interface for specifying which addresses and which protocols can pass through the interface and to which destinations?",
+            "correct_answer": "Access control list",
+            "type": "short_answer"
+        },
+        {
+            "question": "In a distance vector routing protocol, where do routers send their routing table information?",
+            "correct_answer": "They copy the routing table to other routers on the network.",
+            "type": "short_answer"
+        },
+        {
+            "question": "Which AP feature enables you to restrict which devices can connect to your AP based on their physical address?",
+            "correct_answer": "MAC filtering",
+            "type": "short_answer"
+        },
+        {
+            "question": "What are credit card–sized expansion cards used mainly to add functionality to laptop computers?",
+            "correct_answer": "PCMCIA cards",
             "type": "short_answer"
         }
     ]
