@@ -129,7 +129,140 @@
                 "options": ["hop count", "aging time", "metric", "timestamp"],
                 "correct_options": [0, 2],
                 "multi_select": true
-            }
+            },
+            {
+                "question": "You have been asked to determine what services are accessible on your network so you can close those that are not necessary. What tool should you use?",
+                "options": ["port scanner", "trace route", "protocol finder", "ping scanner"],
+                "answer": 0
+              },
+              {
+                "question": "A rootkit is a self-replicating program that masks itself as a useful program but is actually a type of malware.",
+                "options": ["True", "False"],
+                "answer": 1
+              },
+              {
+                "question": "Which standard feature on NTFS-formatted disks encrypts individual files and uses a certificate matching the user account of the user who encrypted the file?",
+                "options": ["BitLocker", "IPsec", "GPG", "EFS"],
+                "answer": 3
+              },
+              {
+                "question": "Which of the following is a type of denial-of-service attack that involves flooding the network with broadcast messages that contain a spoofed source address of an intended victim?",
+                "options": ["packet storm", "broadcast flood", "smurf attack", "half-open SYN attack"],
+                "answer": 2
+              },
+              {
+                "question": "A honeypot is configured to entice attackers and allows administrators to get information about the attack techniques being used.",
+                "options": ["True", "False"],
+                "answer": 0
+              },
+              {
+                "question": "You have purchased a network-based IDS. You have been tasked with deploying the device in a location where the entire network can be protected. Where should you deploy it?",
+                "options": ["internal LAN", "demilitarized zone", "intermediate distribution frame", "datacenter"],
+                "answer": 1
+              },
+              {
+                "question": "Which of the following are true about WPA3? (Choose all that apply.)",
+                "options": ["uses TKIP", "has only the Enterprise variation", "requires PMF", "strongest wireless encryption standard", "backward compatible"],
+                "correct_options": [2, 3, 4],
+                "multi_select": true
+              },
+              {
+                "question": "What type of policy defines the methods involved when a user sign in to the network?",
+                "options": ["audit", "acceptable use", "authentication", "security"],
+                "answer": 2
+              },
+              {
+                "question": "You don't need to physically secure your servers as long as you use a good strong password for your accounts.",
+                "options": ["True", "False"],
+                "answer": 1
+              },
+              {
+                "question": "What type of device should you install as a decoy to lure potential attackers?",
+                "options": ["IPS", "honeypot", "Trojan", "HIDS"],
+                "answer": 1
+              },
+              {
+                "question": "What is a type of malware that is so difficult to detect and remove that most experts agree that it is better to backup your critical data and reinstall the OS?",
+                "options": ["rootkit", "Trojan", "hoax virus", "spyware"],
+                "answer": 0
+              },
+              {
+                "question": "Which facet of securing access to network data makes data unusable to anyone except authorized users?",
+                "options": ["security devices", "malware protection", "encryption", "authentication"],
+                "answer": 2
+              },
+              {
+                "question": "What is created when a packet is encapsulated with additional headers to allow an encrypted packet to be correctly routed by Internet devices?",
+                "options": ["tunnel", "frame", "EFS", "access point"],
+                "answer": 0
+              },
+              {
+                "question": "Which VPN implementation typically needs no additional firewall configuration to be allowed access through the firewall?",
+                "options": ["IPSec", "SSTP", "L2TP", "PPTP"],
+                "answer": 1
+              },
+              {
+                "question": "Which of the following can be used to secure data on disk drives? (Choose all that apply.)",
+                "options": ["VPN", "IPSec", "EFS", "TrueCrypt", "BitLocker"],
+                "correct_options": [2, 3, 4],
+                "multi_select": true
+              },
+              {
+                "question": "What process, available on most routers, will help improve security by replacing the internal IP address of the transmitting device with a public IP address?",
+                "options": ["NAT", "IPSec", "EFS", "VPN"],
+                "answer": 0
+              },
+              {
+                "question": "What can firewalls do to help ensure that a packet is denied if it's not part of an ongoing legitimate conversation?",
+                "options": ["MAC filtering", "intrusion detection", "content filter", "stateful packet inspection"],
+                "answer": 3
+              },
+              {
+                "question": "Which of the following is a type of malware that isn't self-replicating and is usually installed by the user without his knowledge. It's primary goal is to invade your privacy by monitoring your system and reporting your activities to advertisers and spammers.",
+                "options": ["Trojan", "rootkit", "spyware", "hoax virus"],
+                "answer": 2
+              },
+              {
+                "question": "Which Windows domain-based protocol provides mutual authentication between devices?",
+                "options": ["RADIUS", "Kerberos", "EAP", "TACACS+"],
+                "answer": 1
+              },
+              {
+                "question": "Which form of authentication involves the exchange of a password-like key that must be entered on both devices?",
+                "options": ["digital certificate", "preshared key", "GNU privacy guard", "Kerberos authentication"],
+                "answer": 1
+              },
+              {
+                "question": "A security policy should clearly state the desired rules, even if they cannot be enforced.",
+                "options": ["True", "False"],
+                "answer": 1
+              },
+              {
+                "question": "If the minimum password length on a Windows system is set to zero, what does that mean?",
+                "options": ["The user can use a blank password.", "The user account is disabled.", "The user never has to change the password.", "The user has to change the password every day."],
+                "answer": 0
+              },
+              {
+                "question": "Which of the following is a credential category used in multifactor authentication? (Choose all that apply.)",
+                "options": ["inherence", "authority", "knowledge", "rank", "possession"],
+                "correct_options": [0, 2, 4],
+                "multi_select": true
+              },
+              {
+                "question": "A DoS attack ties up network bandwidth or services, rendering resources useless to legitimate users.",
+                "options": ["True", "False"],
+                "answer": 0
+              },
+              {
+                "question": "Which of the following is NOT a guideline of a security policy?",
+                "options": ["uses legal terminology to protect the organization", "should be enforceable", "easy for users to understand", "clearly states the policy objectives"],
+                "answer": 0
+              },
+              {
+                "question": "Which protocol works by establishing an association between two communicating devices and can use a preshared key for authentication?",
+                "options": ["SMB", "EFS", "Kerberos", "IPsec"],
+                "answer": 3
+              }
 
     ]
 }
