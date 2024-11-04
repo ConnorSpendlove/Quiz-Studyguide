@@ -50,6 +50,56 @@
             "question": "What are credit card–sized expansion cards used mainly to add functionality to laptop computers?",
             "correct_answer": "PCMCIA cards",
             "type": "short_answer"
+        },
+        {
+            "question": "Which element of a network security policy explains proper or improper use of the Internet?",
+            "correct_answer": "Internet Use Policy",
+            "type": "short_answer"
+        },
+        {
+            "question": "What policy type outlines the policies for backup procedures, virus protection, and disaster recovery?",
+            "correct_answer": "Data Protection",
+            "type": "short_answer"
+        },
+        {
+            "question": "What are the three levels of security?",
+            "correct_answer": "Highly Restrictive, Moderately Restrictive, Open Security",
+            "type": "short_answer"
+        },
+        {
+            "question": "Which policy explains the manner in which security compliance or violations can be verified and what consequences a violation should have?",
+            "correct_answer": "Auditing Policy",
+            "type": "short_answer"
+        },
+        {
+            "question": "What are the four characteristics of a complex password policy?",
+            "correct_answer": "Lowercase letters, Uppercase letters, numbers, and special characters.",
+            "type": "short_answer"
+        },
+        {
+            "question": "What system usually works like a firewall or router with ACLs?",
+            "correct_answer": "Intrusion Detection System",
+            "type": "short_answer"
+        },
+        {
+            "question": "What determines which TCP and UDP ports are available on a particular computer or device?",
+            "correct_answer": "Port Scanner",
+            "type": "short_answer"
+        },
+        {
+            "question": "What device allows you to capture packets and determine which protocols are running?",
+            "correct_answer": "Protocol Analyzers",
+            "type": "short_answer"
+        },
+        {
+            "question": "What attack is an attacker’s attempt to tie up network bandwidth so that it renders resources useless to legitimate users?",
+            "correct_answer": "A DoS attack (Denial of Service)",
+            "type": "short_answer"
+        },
+        {
+            "question": "What is a program that sends a large number of ping packets to a host?",
+            "correct_answer": "A Ping Flood",
+            "type": "short_answer"
         }
     ]
 }
