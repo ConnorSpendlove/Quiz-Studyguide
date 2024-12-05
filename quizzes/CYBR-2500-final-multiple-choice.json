@@ -262,7 +262,883 @@
                 "question": "Which protocol works by establishing an association between two communicating devices and can use a preshared key for authentication?",
                 "options": ["SMB", "EFS", "Kerberos", "IPsec"],
                 "answer": 3
-              }
-
+              },
+              {
+                "question": "What is the local loop, or last mile?",
+                "options": [
+                    "the connection used between central offices",
+                    "cable between the customer premise equipment and a PC",
+                    "a line used by ISPs for testing T-carrier signals",
+                    "the connection between the demarcation point and the CO"
+                ],
+                "answer": 3
+            },
+            {
+              "question": "Which of the following protocols is NOT used for Windows 10 VPN connections?",
+              "options": [
+                  "SSTP",
+                  "PPTP",
+                  "SMTP",
+                  "L2TP"
+              ],
+              "answer": 2
+          },
+          {
+            "question": "The plain old telephone service is a good example of what kind of WAN technology?",
+            "options": [
+                "packet switched",
+                "leased line",
+                "VPN over Internet",
+                "circuit switched"
+            ],
+            "answer": 3
+        },
+        {
+          "question": "Network Control Protocol is responsible for the setup of a PPP connection, as well as the termination of a connection when it has ended.",
+          "options": [
+              "True",
+              "False"
+          ],
+          "answer": 1
+      },
+      {
+        "question": "What is the signaling method used to allocate time slots for each channel in a T-carrier line called?",
+        "options": [
+            "Frequency Division Multiplexing (FDM)",
+            "Fractional Channel Division (FCD)",
+            "Time Division Multiplexing (TDM)",
+            "Time Slotted Modulation (TSM)"
+        ],
+        "answer": 2
+    },
+    {
+      "question": "Which statement about Multiprotocol Label Switching (MPLS) is true?",
+      "options": [
+          "MPLS is dependent on the underlying Data Link layer technology.",
+          "MPLS will run over ATM, frame relay, and SONET, but not Ethernet.",
+          "MPLS works with any Network layer protocol.",
+          "MPLS is popular because of its ease of use and inexpensive cost."
+      ],
+      "answer": 2
+  },
+  {
+    "question": "Packet-switched WANs use virtual circuits to ensure that packets are delivered reliably and at the agreed-on bandwidth level.",
+    "options": ["True", "False"],
+    "answer": 0
+},
+{
+    "question": "The company you work for currently has ISDN service in place. Your supervisor wishes to know what sort of ISDN service is being used so that better alternatives can be considered. He tells you that the service has two B-Channels and a D-Channel. What ISDN format do you have?",
+    "options": [
+        "Primary Rate Interface (PRI)",
+        "Plain Old Telephone Service (POTS)",
+        "Basic Rate Extended (BRE)",
+        "Basic Rate Interface (BRI)"
+    ],
+    "answer": 3
+},
+{
+    "question": "Which of the following is something X.25 does NOT offer?",
+    "options": [
+        "SVCs",
+        "144 Mbps maximum throughput",
+        "error checking and retransmission",
+        "PVCs"
+    ],
+    "answer": 1
+},
+{
+    "question": "T-Carrier lines only require a CSU/DSU on the customer's side of the connection.",
+    "options": ["True", "False"],
+    "answer": 1
+},
+{
+    "question": "Your local ISP has provided you with a dedicated line that has a Committed Information Rate of 1.54 Mbps. What does this mean?",
+    "options": [
+        "1.54 Mbps is the guaranteed minimum transmission rate.",
+        "The dedicated line is using X.25.",
+        "1.54 Mbps is available for burst network traffic only.",
+        "1.54 Mbps is the highest amount of bandwidth the link can use."
+    ],
+    "answer": 0
+},
+{
+    "question": "Which of the following terms describes the category of cloud computing in which a customer develops applications using development tools and infrastructure provided by the service provider?",
+    "options": [
+        "Platform as a service",
+        "Software as a service",
+        "Infrastructure as a service",
+        "Network as a service"
+    ],
+    "answer": 0
+},
+{
+    "question": "You're the network administrator for a large bean-bag chair company. You are presenting to your supervisor several reasons to make use of cloud computing for handling data processing. Which answer would be a valid benefit of using cloud computing?",
+    "options": [
+        "reduced physical plant costs",
+        "decrease in user application training time",
+        "always on, always available access independent of network status",
+        "increased use of localized resources"
+    ],
+    "answer": 0
+},
+{
+    "question": "A router is a CSU/DSU device.",
+    "options": ["True", "False"],
+    "answer": 1
+},
+{
+    "question": "Which cloud computing category allows a company to quickly provision additional disk space?",
+    "options": [
+        "hosted networking",
+        "hosted infrastructure",
+        "hosted platforms",
+        "hosted applications"
+    ],
+    "answer": 1
+},
+{
+    "question": "Which of the following is NOT true about Ethernet WANs?",
+    "options": [
+        "distances over 5 km",
+        "lower administration",
+        "difficult to integrate into LANs",
+        "1 Gbps bandwidth"
+    ],
+    "answer": 2
+},
+{
+    "question": "You have been asked to install a VPN remote access solution using Windows Server. What do you need to install?",
+    "options": [
+        "Routing and Remote Access Service (RRAS)",
+        "Windows Server Remote Access (WSRA)",
+        "Microsoft Mobile User Service (MMUS)",
+        "Dialup and Remote Access Services (DRAS)"
+    ],
+    "answer": 0
+},
+{
+    "question": "Which one of the following is NOT a typical SONET data rate?",
+    "options": ["OC-3", "OC-128", "OC-768", "OC-48"],
+    "answer": 1
+},
+{
+    "question": "Select the true statement regarding analog and digital signals.",
+    "options": [
+        "A modem is not required to transmit LAN data over a WAN link that uses analog signals.",
+        "Digital signals vary over time continually and can be represented by a sine wave, while analog signals are binary 1s and 0s using voltage levels.",
+        "On fiber optic media, a 1 bit can be represented as a pulsing analog signal.",
+        "Analog signals vary over time continually and can be represented by a sine wave, while digital signals are binary 1s and 0s using voltage levels."
+    ],
+    "answer": 3
+},
+{
+    "question": "Multiprotocol Label Switching (MPLS) supports both IPv4 and IPv6, as well as other network layer protocols.",
+    "options": ["True", "False"],
+    "answer": 0
+},
+{
+    "question": "Part of SONET's flexibility comes from its ability to be arranged in several different physical topologies. Which of the following is NOT a possible SONET topology?",
+    "options": [
+        "point to point",
+        "point to multipoint",
+        "fault tolerant bus",
+        "fault tolerant ring"
+    ],
+    "answer": 2
+},
+{
+    "question": "Although a frame relay connection is established in much the same way that a T1 connection is, which of the following is an important distinction between the two technologies?",
+    "options": [
+        "T1 connections are established using CSU/DSUs. Frame relay connections require a VPN service on the remote node.",
+        "T1 uses point to point, while frame relay makes use of virtual circuits.",
+        "Frame relay is point to point, whereas T1 uses virtual circuits.",
+        "T1 data traffic must all be transmitted in clear text, while frame relay encrypts data automatically and is more secure."
+    ],
+    "answer": 1
+},
+{
+    "question": "What would an Asynchronous Transfer Mode (ATM) network be best suited for?",
+    "options": [
+        "downloading an RFC text file from the IETF web page",
+        "transferring large files",
+        "sending e-mail",
+        "carrying voice, data, and time-sensitive information"
+    ],
+    "answer": 3
+},
+{
+    "question": "When would you most likely NOT choose to use a leased line connection?",
+    "options": [
+        "when the link is only needed as a backup connection",
+        "for mission critical applications",
+        "when high-quality, 24/7 access is needed",
+        "when fast upstream as well as downstream communications is required"
+    ],
+    "answer": 0
+},
+{
+    "question": "Which cloud computing category refers to the use of software hosted on a service provider's network, and is usually subscription based?",
+    "options": [
+        "Software as a service",
+        "Infrastructure as a service",
+        "Platform as a service",
+        "Networking as a service"
+    ],
+    "answer": 0
+},
+{
+    "question": "Which component of a file-sharing client intercepts requests for resources and determines if the resource is local or remote?",
+    "options": [
+        "UNC path",
+        "default gateway",
+        "resolver",
+        "Redirector"
+    ],
+    "answer": 3
+},
+{
+    "question": "Which of the following is a function typically provided by the centralized management of a server-based network? (Choose all that apply.)",
+    "options": [
+        "security policy management",
+        "user authentication and authorization",
+        "application development",
+        "account management"
+    ],
+    "correct_options": [0, 1, 3],
+    "multi_select": true
+},
+{
+    "question": "What directory service protocol is used by Active Directory and also supported by Linux?",
+    "options": ["LDAP", "NFS", "ICMP", "NIS"],
+    "answer": 0
+},
+{
+    "question": "What type of multitasking did older OSs use, which allowed a process to monopolize the CPU's time until the process had completed its own task?",
+    "options": ["contextual", "preemptive", "multiplexed", "Cooperative"],
+    "answer": 3
+},
+{
+    "question": "Which technology is a fault tolerant feature provided by a server OS? (Choose all that apply.)",
+    "options": [
+        "resolver cache",
+        "RAID",
+        "server clustering",
+        "hot-swappable devices",
+        "SMTP client"
+    ],
+    "correct_options": [1, 2, 3],
+    "multi_select": true
+},
+{
+    "question": "What is a partial copy of a VM that is used to restore it to a previous state?",
+    "options": ["hypervisor", "host computer", "clone", "snapshot"],
+    "answer": 3
+},
+{
+    "question": "For enterprise servers, or servers accessed around the clock, SATA disks are preferred over SAS disks.",
+    "options": ["True", "False"],
+    "answer": 1
+},
+{
+    "question": "Which edition of Windows Server should you consider if you want to run many virtual instances of Windows Server with Hyper-V on the server?",
+    "options": ["Enterprise", "Standard", "Datacenter", "Essentials"],
+    "answer": 2
+},
+{
+    "question": "A type 1 hypervisor runs directly on the host computer's hardware.",
+    "options": ["True", "False"],
+    "answer": 0
+},
+{
+    "question": "The kernel is a software layer that sits just above the computer hardware.",
+    "options": ["True", "False"],
+    "answer": 0
+},
+{
+    "question": "Which of the following file systems supports file and folder permissions? (Choose all that apply.)",
+    "options": ["DOS", "FAT16", "NTFS", "FAT32", "EXT3"],
+    "correct_options": [2, 4],
+    "multi_select": true
+},
+{
+    "question": "How does a CPU perform multitasking?",
+    "options": [
+        "using time slicing and context switching",
+        "using asynchronous bus management",
+        "using process-driven frequency hopping",
+        "using time division multiplexing"
+    ],
+    "answer": 0
+},
+{
+    "question": "In order to multitask, a computer must have two or more processors.",
+    "options": ["True", "False"],
+    "answer": 1
+},
+{
+    "question": "Which of the following is NOT a typical function of a file system?",
+    "options": [
+        "hierarchical storage method",
+        "provides secure access to files",
+        "disk drive space organization",
+        "schedules processes and manages memory"
+    ],
+    "answer": 3
+},
+{
+    "question": "What is the native file-sharing protocol in Linux?",
+    "options": ["SMB", "SMP", "NSF", "NFS"],
+    "answer": 3
+},
+{
+  "question": "Which of the following is a service NOT usually found on a client operating system?",
+  "options": ["file sharing", "directory service", "DNS", "DHCP"],
+  "answer": 1
+},
+{
+  "question": "Which feature of bare-metal virtualization products allows virtual resources to be allocated on demand to meet application requirements?",
+  "options": ["live migration", "dynamic provisioning", "snapshots", "server consolidation"],
+  "answer": 1
+},
+{
+  "question": "You are testing out a new DHCP server and want to make sure that it does not interfere with your current network. What option would you use to configure your network adapter using VMware Workstation?",
+  "options": ["external", "host-only", "bridged", "switched"],
+  "answer": 1
+},
+{
+  "question": "When a disk is formatted, it is impossible to recover the data that was on the disk.",
+  "options": ["True", "False"],
+  "answer": 1
+},
+{
+  "question": "What storage solution involves a third-party company that provides off-site hosting of data?",
+  "options": ["network-attached storage", "network accessed appliance", "storage area network", "cloud-based storage"],
+  "answer": 3
+},
+{
+  "question": "Which of the following virtualization products uses a type 2 hypervisor?",
+  "options": ["Microsoft Hyper-V", "VMware Workstation", "VMware vSphere", "Citrix XenServer"],
+  "answer": 1
+},
+{
+  "question": "In Windows, what are the two most common ways of accessing a shared folder? (Choose two.)",
+  "options": ["mapping a drive", "entering a SMB path", "entering an ARP path", "entering a UNC path"],
+  "correct_options": [0, 3],
+  "multi_select": true
+},
+{
+  "question": "Which protocol does Windows use by default for file sharing?",
+  "options": ["SMB", "SNMP", "FTP", "SMTP"],
+  "answer": 0
+},
+{
+  "question": "You have been asked to create a file that will contain a series of Windows command-prompt commands that automate the creation of a VPN client that connects to your company VPN server. What type of file should you create?",
+  "options": ["executable file", "batch file", "macro file", "computer program"],
+  "answer": 1
+},
+{
+  "question": "What unit is used to divide the storage space on a disk drive?",
+  "options": ["sectors", "bytes", "bits", "segments"],
+  "answer": 0
+},
+{
+  "question": "Most small businesses require a high level of security including encryption technologies and complex network connections.",
+  "options": ["True", "False"],
+  "answer": 1
+},
+{
+  "question": "Before you purchase any software for a small business, especially the OS, you should be aware of the number of users that are allowed to access the software. What document will give you that information?",
+  "options": ["ACL", "CRM", "TCO", "EULA"],
+  "answer": 3
+},
+{
+  "question": "If your network consists mostly of computers with Linux operating systems, which file-sharing system can you use that is native to Linux?",
+  "options": ["Samba", "NIS", "NFS", "SMB"],
+  "answer": 2
+},
+{
+  "question": "In most cases, you can install a small business network and move on to the next job, leaving the company’s IT staff to support the network.",
+  "options": ["True", "False"],
+  "answer": 1
+},
+{
+  "question": "If your company has a Web site that customers need to access, you will need to allow unsolicited communications from outside the network. In this situation, you need to install a router that supports what type of forwarding?",
+  "options": ["packet", "call", "fast", "port"],
+  "answer": 3
+},
+{
+  "question": "In a small business network, the router usually takes on the responsibilities of many roles, which include a firewall as well as a DHCP server.",
+  "options": ["True", "False"],
+  "answer": 0
+},
+{
+  "question": "The creator of a HomeGroup has the ability to change the randomly generated password to a more user-friendly password.",
+  "options": ["True", "False"],
+  "answer": 0
+},
+{
+  "question": "You have been contracted to set up a network for a small business. The company currently has 100 users, and they are looking to expand. They want to use Microsoft Exchange Server for their e-mail and shared calendar feature. What version of Windows Server would you suggest that they purchase?",
+  "options": [
+      "Windows Essential Business Server",
+      "Windows Server 2008 Enterprise Edition",
+      "Windows Small Business Server",
+      "Windows Server 2008 Datacenter Edition"
+  ],
+  "answer": 0
+},
+{
+  "question": "After you have set up a network for a small business, you may need to access the network remotely to provide support for the users. Which remote access option should not be used unless a secure connection can be established first?",
+  "options": ["SSH", "dial-up", "Telnet", "Windows Remote Assistance"],
+  "answer": 2
+},
+{
+  "question": "For a computer to connect to a HomeGroup, it must have certain features enabled or configured correctly. Which of the following is not necessary to join a HomeGroup?",
+  "options": ["IPv6 Protocol", "Network Configuration", "DHCP", "Network Discovery"],
+  "answer": 2
+},
+{
+  "question": "What is CRM software?",
+  "options": [
+      "software that is used to keep track of customer information, including contact information and appointments",
+      "software that maintains accounting records for a small business",
+      "software that is used to allow a number of employees to contribute and share data easily in a small network",
+      "software that maintains a database of employee records including payroll and taxes"
+  ],
+  "answer": 0
+},
+{
+  "question": "Which of the following is not a requirement for most small business networks?",
+  "options": ["complex WAN environment", "accessibility to specialized business applications", "Internet access for all users", "file and printer sharing"],
+  "answer": 0
+},
+{
+  "question": "Which of the following is a new file-sharing option that can be used on the network if all the computers have Windows 7 installed?",
+  "options": ["HomeGroup", "peer-to-peer network", "home network", "work network"],
+  "answer": 0
+},
+{
+  "question": "If you want to implement fault-tolerance on your network, what type of RAID would you use on the drives that contain the OS and applications?",
+  "options": ["3", "5", "0", "1"],
+  "answer": 3
+},
+{
+  "question": "When purchasing new equipment for a small business it is a good idea to invest in expandability features that will meet the company’s needs for the next 10 to 15 years.",
+  "options": ["True", "False"],
+  "answer": 1
+},
+{
+  "question": "If you want to implement fault-tolerance on your network, what type of RAID would you use on the drives that contain data?",
+  "options": ["5", "0", "1", "3"],
+  "answer": 0
+},
+{
+  "question": "Which of the following is a VPN mode that is usually implemented to give mobile users access to the network?",
+  "options": ["client-to-gateway", "gateway-to-gateway", "endpoint-to-client", "gateway-to-client"],
+  "answer": 0
+},
+{
+  "question": "Which of the following is not included in any edition of Windows Small Business Server?",
+  "options": ["Microsoft Exchange", "Microsoft Forefront Security", "support for up to 500 users", "Microsoft SQL Server"],
+  "answer": 2
+},
+{
+  "question": "Which of the following should you consider when choosing a wireless network instead of a wired network?",
+  "options": ["the ability of unauthorized users to receive a signal", "suitable environment to run cabling", "the cable grade you should use", "which 802.3 standard to choose"],
+  "answer": 0
+},
+{
+  "question": "Which of the following is not a feature that you should consider when choosing a new switch for a small business?",
+  "options": ["managed or unmanaged", "the speed of the switch", "VPN support", "support for different types of media"],
+  "answer": 2
+},
+{
+  "question": "Which of the following installations of Windows can be used to create a HomeGroup?",
+  "options": ["Windows 7 Starter", "Windows 7 Home Premium", "Windows Vista", "Windows 7 Home Basic"],
+  "answer": 1
+},
+{
+  "question": "Which of the following are standard NTFS permissions?",
+  "options": ["Read", "Execute", "Change", "Write", "List Folder Contents"],
+  "correct_options": [0, 3, 4],
+  "multi_select": true
+},
+{
+  "question": "You have been asked to store a file with personal information on it. You need to be sure that only your user account can access the file, even if other user accounts have been granted permissions or if the disk is stolen. What standard NTFS feature can you use?",
+  "options": ["EFS", "NFS", "SMB", "FTP"],
+  "answer": 0
+},
+{
+  "question": "Which of the following are case sensitive? (Choose all that apply.)",
+  "options": ["Linux logon name", "Windows password", "Linux password", "Windows logon name"],
+  "correct_options": [0, 1, 2],
+  "multi_select": true
+},
+{
+  "question": "You are creating a new group for the Sales department. All of the users that will be in this group will need to have access to the same resources. What scope would you use for this group?",
+  "options": ["local", "global", "universal", "domain local"],
+  "answer": 1
+},
+{
+  "question": "A RAID 1 requires two drives because it copies data to both drives at the same time, making an exact duplicate of the data.",
+  "options": ["True", "False"],
+  "answer": 0
+},
+{
+  "question": "How many disks are needed to implement a RAID 1 + 0?",
+  "options": ["3", "2", "5", "4"],
+  "answer": 3
+},
+{
+  "question": "When dealing with permissions in Linux, what are the three user types that can be assigned permissions? (Choose three.)",
+  "options": ["Owner", "Class", "Other", "Creator", "Group"],
+  "correct_options": [0, 2, 4],
+  "multi_select": true
+},
+{
+  "question": "Employees in the Sales department need to be able to access the sales share on the file server. They will need to have the ability to create files, read them, and make corrections or additions. Which of the following share permissions should the group be given?",
+  "options": ["modify", "read", "change", "write"],
+  "answer": 2
+},
+{
+  "question": "While group accounts make managing user rights and permissions more cumbersome, using them is a best practice.",
+  "options": ["True", "False"],
+  "answer": 1
+},
+{
+  "question": "What tool would you use to view error messages that are generated by system services or applications?",
+  "options": ["Performance Monitor", "Resource Manager", "Event Viewer", "Task Manager"],
+  "answer": 2
+},
+{
+  "question": "Where are the waiting print jobs stored while they are waiting to be sent to the print device?",
+  "options": ["print server", "printer", "print queue", "printer pool"],
+  "answer": 2
+},
+{
+  "question": "You have just installed a new disk and formatted it. You don't want to assign it a drive letter and you want to access it from your existing C: drive. What feature should you use?",
+  "options": ["file compression", "disk quotas", "shadow copies", "volume mount points"],
+  "answer": 3
+},
+{
+  "question": "The partition that contains the Windows OS files is known as the what type of partition?",
+  "options": ["boot", "dynamic", "extended", "primary"],
+  "answer": 0
+},
+{
+  "question": "A user logs on to her account and is able to make changes to her desktop, like adding a background and screen saver. However, when she logs off and logs back on, the desktop reverts to its original configuration. What type of user profile does this user have?",
+  "options": ["roaming", "mandatory", "default", "local"],
+  "answer": 1
+},
+{
+  "question": "Using Performance Monitor, performance monitoring can be scheduled for later analysis, but cannot be tracked in real time.",
+  "options": ["True", "False"],
+  "answer": 1
+},
+{
+  "question": "In Linux, what is the command for viewing a file's contents on the screen?",
+  "options": ["dir", "ls", "etc", "cat"],
+  "answer": 3
+},
+{
+  "question": "In which special identity group does a user become a member when the user logs onto a computer locally?",
+  "options": ["Network", "System", "Print Operators", "Self", "Interactive"],
+  "answer": 4
+},
+{
+  "question": "You are the network administrator for a company. The company's policy is that the users are allowed to set their own passwords but that they must change their password every 30 days. You have just received a call from a user who can't log on because she forgot her password. After you change her password, which of the password options listed would you set in the user's account so that she will have to change the password when she logs on using the password you assigned?",
+  "options": ["User cannot change password", "Account is disabled", "Password never expires", "User must change password at next logon"],
+  "answer": 3
+},
+{
+  "question": "Which disk arrangement is fault tolerant and uses half of your disk space for fault tolerance?",
+  "options": ["disk parity", "disk striping with parity", "disk striping", "disk mirroring"],
+  "answer": 3
+},
+{
+  "question": "In Windows, what do rights define?",
+  "options": ["when the user can sign in to the system", "how often the user must change the password", "the types of actions a user can perform", "which files the user has access to"],
+  "answer": 2
+},
+{
+  "question": "What type of disk is required if you want to access additional features such as disk spanning?",
+  "options": ["basic", "system", "active", "dynamic"],
+  "answer": 3
+},
+{
+  "question": "Domain local groups can be used to assign permissions to resources only in the domain in which the group is created.",
+  "options": ["True", "False"],
+  "answer": 0
+},
+{
+  "question": "Windows can be installed on an extended partition that has been formatted with the NTFS file system.",
+  "options": ["True", "False"],
+  "answer": 1
+},
+{
+  "question": "Which disk configuration does not provide fault tolerance?",
+  "options": ["RAID 5", "RAID 1", "disk mirroring", "disk striping"],
+  "answer": 3
+},
+{
+  "question": "Which of the following is NOT a Linux native file system?",
+  "options": ["Ext3", "Ext4", "ReFS", "ReiserFS"],
+  "answer": 2
+},
+{
+  "question": "Which IoT technology is based on the same cellular technology used in most mobile phones?",
+  "options": ["Narrowband IoT", "6LoWPAN", "Process Field Net", "Thread"],
+  "answer": 0
+},
+{
+  "question": "Which application would be considered a product of IoT?",
+  "options": ["topographic maps", "DVD video player", "AM radio broadcast", "real-time traffic information"],
+  "answer": 3
+},
+{
+  "question": "A proximity sensor doesn't require physical contact to be activated.",
+  "options": ["True", "False"],
+  "answer": 0
+},
+{
+  "question": "Which home automation technology is a mesh technology that is used for smart locks, lighting, and security systems?",
+  "options": ["LoRaWAN", "Z-Wave", "Bluetooth 4", "802.11b"],
+  "answer": 1
+},
+{
+  "question": "Which of the following is considered a LPWA network technology?",
+  "options": ["Z-Wave", "Bluetooth", "LoRaWAN", "Zigbee"],
+  "answer": 2
+},
+{
+  "question": "Which technology is most likely to be associated with IoT?",
+  "options": ["laptop computer", "desktop computer", "smart watch", "Supercomputer"],
+  "answer": 2
+},
+{
+  "question": "Which industry sector uses IoT technologies to deploy smart grids?",
+  "options": ["emergency services", "energy", "transportation", "manufacturing"],
+  "answer": 1
+},
+{
+  "question": "Which of the following is a benefit of data-driven manufacturing?",
+  "options": ["mobile diagnostics for early responders", "efficiency from the use of smart meters", "reduction of waste in material goods", "efficient traffic management"],
+  "answer": 2
+},
+{
+  "question": "If you want to write software for an IoT project, what type of application should you install?",
+  "options": ["Arduino", "LED", "Raspberry Pi", "IDE"],
+  "answer": 3
+},
+{
+  "question": "The number of 'things' connected to the Internet numbers in the 10s of billions.",
+  "options": ["True", "False"],
+  "answer": 0
+},
+{
+  "question": "Which type of sensor can be used to cause an event to occur when the sun comes up?",
+  "options": ["PIR", "LDR", "capacitive", "gyroscope"],
+  "answer": 1
+},
+{
+  "question": "Which device can be described as a single-board computer?",
+  "options": ["ATmega328", "Arduino", "Raspberry Pi", "ESP32"],
+  "answer": 2
+},
+{
+  "question": "The applications for IoT in transportation are very limited and not worth exploring.",
+  "options": ["True", "False"],
+  "answer": 1
+},
+{
+  "question": "The Internet of Things is composed primarily of desktop and laptop computers that have a wireless interface.",
+  "options": ["True", "False"],
+  "answer": 1
+},
+{
+  "question": "A proximity sensor doesn't require physical contact to be activated.",
+  "options": ["True", "False"],
+  "answer": 0
+},
+{
+  "question": "Which features does Bluetooth 5.1 add to existing Bluetooth technology?",
+  "options": ["low energy", "burst transfer", "mesh networking", "Bluetooth Smart"],
+  "answer": 2
+},
+{
+  "question": "Which type of network might be used to connect utility network nodes together?",
+  "options": ["Field Area Network", "Wide Area Network", "Neighborhood Area Network", "Personal Area Network"],
+  "answer": 0
+},
+{
+  "question": "If you want to build a smart-glove that responds based on the direction and speed a user moves their hand, what sensor should you use?",
+  "options": ["photodiode", "accelerometer", "biometric", "microwave radar"],
+  "answer": 1
+},
+{
+  "question": "Which of the following would NOT typically be considered a goal of most IoT technologies?",
+  "options": ["react to data", "collect data", "communicate data", "store data"],
+  "answer": 3
+},
+{
+  "question": "In which type of system are you most likely to find a microcontroller?",
+  "options": ["mainframe", "embedded", "back-end", "database"],
+  "answer": 1
+},
+{
+  "question": "If you want to create a device that can open and close a valve on a pipe using automation, you should use a CPS.",
+  "options": ["True", "False"],
+  "answer": 1
+},
+{
+  "question": "What type of sensor is used to allow a smart phone screen respond to touch?",
+  "options": ["capacitive", "GPS", "temperature", "passive infrared"],
+  "answer": 0
+},
+{
+  "question": "When processing of collected data occurs where the sensors are located, what type of processing is this?",
+  "options": ["back-end processing", "cloud processing", "edge processing", "front-end processing"],
+  "answer": 2
+},
+{
+  "question": "Which type of sensor is most likely to be used in seismology and mining to detect ground movement?",
+  "options": ["humidity sensor", "geophone", "proximity sensor", "photoresistor"],
+  "answer": 1
+},
+{
+  "question": "The trial-and-error method should NOT be used under which of the following situations?",
+  "options": ["Troubleshooting is occurring in a test lab.", "The device you're troubleshooting is currently in use on the network.", "The change you're about to make can be undone easily.", "The system is being newly configured, so no data can be lost."],
+  "answer": 1
+},
+{
+  "question": "Protocol analyzers can help solve problems from the Data Link layer up to the Application layer.",
+  "options": ["True", "False"],
+  "answer": 0
+},
+{
+  "question": "Which statistic is most likely to be included in a network baseline report?",
+  "options": ["number of idle users logged in", "how many text files are in use", "average RPM of system fans", "hard drive utilization"],
+  "answer": 3
+},
+{
+  "question": "Your current backup schedule involves differential backups of all data Monday through Saturday, with a full backup on Sunday. Last Saturday, one of your storage drives failed prior to running the daily backup. What must be done to recover the data on the failed drive?",
+  "options": ["The last full backup should be restored first, followed by the last successful differential backup prior to the drive failure.", "Only the differentials need to be restored, but they must be done in sequential order.", "First the full backup from the previous Sunday must be restored, followed by each differential backup leading up to the day of the drive failure.", "The differential backup from Friday is restored, followed by the last full backup of the drive."],
+  "answer": 0
+},
+{
+  "question": "A junior network administrator tells you that he can ping a DNS server successfully using its IP address, but he has not tested domain name lookups. What utility on the command line would you suggest your colleague use next?",
+  "options": ["ipconfig", "traceroute", "nslookup", "nbtstat"],
+  "answer": 2
+},
+{
+  "question": "What does the ping message 'Destination host unreachable' message mean?",
+  "options": ["The pinged host is on another network.", "An ARP reply was not received.", "The pinged host's network is down.", "The pinged host responded, but has an incorrect gateway configured."],
+  "answer": 1
+},
+{
+  "question": "You receive a phone call from a co-worker telling you that 'the network is down.' Just as you are about to look into the issue, you receive several more phone calls from other co-workers. Using the problem-solving process, what must be done first to effectively troubleshoot the issue?",
+  "options": ["Define the problem and scope.", "Devise preventive measures.", "Apply a solution.", "Devise a possible solution."],
+  "answer": 0
+},
+{
+  "question": "A single ping message with a long response time is a definite indication of a problem.",
+  "options": ["True", "False"],
+  "answer": 1
+},
+{
+  "question": "Which of the following is NOT a good practice for performing upgrades?",
+  "options": ["Do an upgrade notification reminder for users.", "Test upgrades on an isolated network.", "Perform research on potential upgrading issues.", "Wait three months before upgrading a new release."],
+  "answer": 3
+},
+{
+  "question": "What kind of software would you use to view and troubleshoot protocol-specific problems such as TCP retries caused by missed acknowledgments, or duplicate acknowledgments?",
+  "options": ["protocol analyzer", "management information base", "Simple Network Management Protocol", "software agents"],
+  "answer": 0
+},
+{
+  "question": "The tracert command would be best suited for which of the following tasks?",
+  "options": ["locating bottlenecks in an internetwork", "testing DNS settings", "testing layer 3 connectivity with a locally connected host", "determining network bandwidth"],
+  "answer": 0
+},
+{
+  "question": "Failing to document your network makes you indispensable.",
+  "options": ["True", "False"],
+  "answer": 1
+},
+{
+  "question": "Almost immediately after a server migration project, employees are complaining that they can't reach the Internet. You sit down at a machine and try to ping a well-known website using the host name, which fails. You then try to ping a known public IP address, which succeeds. What is most likely the problem?",
+  "options": ["DNS settings are incorrect", "subnet mask is wrong", "IP Address of each machine is set incorrectly", "no gateway address is set"],
+  "answer": 0
+},
+{
+  "question": "You have several network devices that support SNMP and RMON. What type of network troubleshooting tool should you use to take advantage of those capabilities?",
+  "options": ["a TDR", "a port scanner", "a ping scanner", "a network monitor"],
+  "answer": 3
+},
+{
+  "question": "The tracert command is used to determine the path between two devices.",
+  "options": ["True", "False"],
+  "answer": 0
+},
+{
+  "question": "You recently completed a network overhaul over the weekend. Everything seems to be functioning properly until you receive a swarm of help desk support requests, all originating from one specific floor in your building. After a few minutes on the phone with those affected, you determine that no one has indicator lights active on their NICs. What is the most likely problem?",
+  "options": ["Static IP address settings have prevented the NIC from entering a usable state.", "The DHCP server has failed.", "A network switch is powered off.", "A gateway is incorrectly configured."],
+  "answer": 2
+},
+{
+  "question": "Your current backup schedule involves incremental backups of all data Monday through Saturday, with a full backup on Sunday. Last Saturday, one of your storage drives failed prior to running the daily backup. What must be done to recover the data on the failed drive?",
+  "options": ["The last full backup should be restored first, followed by the last incremental backup prior to the drive failure.", "Only the last incremental backup needs to be restored.", "The incremental backups must be restored in sequential order, but the full backup is not necessary.", "The full backup must be restored first, followed by all incremental backups in sequential order leading up to the day of failure."],
+  "answer": 3
+},
+{
+  "question": "A junior network administrator tells you that he can ping a DNS server successfully using its IP address, but he has not tested domain name lookups. What utility on the command line would you suggest your colleague use next?",
+  "options": ["ipconfig", "traceroute", "nslookup", "nbtstat"],
+  "answer": 2
+},
+  {
+    "question": "Which command will display the configured IP address, default gateway, and DNS servers for a Windows workstation?",
+    "options": ["ipconfig", "ipconfig /conf", "ipconfig /show", "ipconfig /all"],
+    "answer": 3
+  },
+  {
+    "question": "If a Registry file or boot file becomes corrupted, which type of backup is usually all that's required to get the system running again?",
+    "options": ["daily", "system state", "differential", "incremental"],
+    "answer": 1
+  },
+  {
+    "question": "Which of the following is NOT typically a question that needs to be answered to determine the cause of poor performance on a network?",
+    "options": ["Have new applications been added to computers on the network?", "Has new equipment been added to the network?", "What has changed since the last time the network functioned normally?", "Have any personnel been recently replaced?"],
+    "answer": 3
+  },
+  {
+    "question": "You have just connected a brand new workstation to your local network. As per company policy, you have used a static IP configuration. However, all attempts to reach the Internet from the workstation fail. You have verified that you can communicate with servers and other workstations on the local network, and that you are the only one having an issue reaching the Internet. What is most likely the issue?",
+    "options": ["incorrectly configured gateway address", "DNS issues", "wrong IP address for the workstation", "incorrectly configured MAC address"],
+    "answer": 0
+  },
+  {
+    "question": "You are currently troubleshooting a network issue with your ISP's customer support agent. The agent requests that you open a command prompt and type ping 127.0.0.1. What does this accomplish?",
+    "options": ["tests that the local IP protocol is functioning", "tests a well-known public IP address", "tests TCP/IP configuration settings", "tests the default gateway"],
+    "answer": 0
+  },
+  {
+    "question": "In the problem-solving process, you should always devise a solution to the problem you are facing prior to determining the scope of the problem.",
+    "options": ["True", "False"],
+    "answer": 1
+  },
+  {
+    "question": "Which of the following is true about a hot site?",
+    "options": ["devices aren't usually configured", "data is synchronized", "might be down for a few days", "servers need to be configured before using"],
+    "answer": 1
+  },
+  {
+    "question": "Which of the following consists of the policies, procedures, and resources required to ensure that a business can continue to function after a major catastrophe that renders the site unable to operate?",
+    "options": ["disaster relief", "data recovery policy", "business continuity", "enterprise backup"],
+    "answer": 2
+  },
+  {
+    "question": "The trial-and-error method should NOT be used under which of the following situations?",
+    "options": ["Troubleshooting is occurring in a test lab.", "The system is being newly configured, so no data can be lost.", "The change you're about to make can be undone easily.", "The device you're troubleshooting is currently in use on the network."],
+    "answer": 3
+  }
+  
     ]
 }
